@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria de Viagens Premium | KNJ TUR</title>
+    <meta name="description" content="Planejamento completo de passagens, seguros, roteiros e assessoria internacional. Viaje com a segurança de quem entende de elite.">
+    
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF8C00',
+                        'primary-dark': '#CC7000',
+                        accent: '#FFD700',
+                        surface: '#0A0A0A',
+                        'surface-variant': '#141414',
+                        'on-surface': '#FFFFFF',
+                        'on-surface-variant': '#A0A0A0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary/30">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-lg border-b border-white/5 h-20 flex items-center transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="flex items-center group">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105">
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-widest text-on-surface-variant">
+                <a href="/" class="hover:text-primary transition-colors">Home</a>
+                <a href="/visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+                <a href="/blog/" class="hover:text-primary transition-colors">Blog</a>
+                <a href="/viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="bg-[#25D366] hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full transition-all flex items-center gap-2">
+                    <i data-lucide="message-circle" size="18"></i> WhatsApp
+                </a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden text-white p-2">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-surface flex flex-col items-center justify-center gap-8 text-2xl font-black uppercase italic tracking-tighter">
+        <a href="/">Home</a>
+        <a href="/visto-americano/">Visto Americano</a>
+        <a href="/viagens/">Viagens</a>
+        <a href="/blog/">Blog</a>
+        <a href="https://wa.me/5511994085822" class="text-primary border-2 border-primary px-8 py-4 rounded-full">WhatsApp</a>
+    </div>
+
+    <main class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16 md:mb-24">
+                <h1 class="text-4xl md:text-6xl lg:text-8xl font-display font-black text-white mb-6 md:mb-8 tracking-tight text-center">Consultoria <br><span class="text-primary italic">360 Graus</span></h1>
+                <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-3xl mx-auto">
+                    Sua viagem começa muito antes do check-in. Desenhamos cada etapa para que sua única preocupação seja aproveitar o destino com máxima segurança jurídica.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 md:mb-32">
+                <div class="p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/30 transition-all group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8 group-hover:scale-110 transition-transform">
+                        <i data-lucide="ticket" class="text-primary" size="28"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Passagens Aéreas</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Emissão com as melhores tarifas e gestão de milhas para trechos premium em executiva ou primeira classe.</p>
+                </div>
+                <div class="p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/30 transition-all group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8 group-hover:scale-110 transition-transform">
+                        <i data-lucide="hotel" class="text-primary" size="28"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Hospedagem VIP</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Curadoria de hotéis que oferecem mais que uma cama: experiências, mimos e localizações estratégicas.</p>
+                </div>
+                <div class="p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/30 transition-all group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check" class="text-primary" size="28"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Seguro Viagem</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed">Coberturas robustas que realmente funcionam em caso de emergência internacional.</p>
+                </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="cta-box relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,#FFFFFF11_0%,transparent_70%)]"></div>
+                <h2 class="relative z-10 text-3xl md:text-5xl font-display font-black text-white mb-8 uppercase italic tracking-tighter">Planeje sua próxima jornada</h2>
+                <p class="relative z-10 text-white/90 text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+                    Clique abaixo para receber uma proposta personalizada de roteiro e logística internacional.
+                </p>
+                <a href="https://wa.me/5511994085822" class="btn-cta relative z-10">
+                    Falar com Especialista <i data-lucide="arrow-right" class="inline-block ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-20 border-t border-white/5 text-center">
+        <div class="container mx-auto px-6">
+            <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 w-auto mb-12 mx-auto">
+            <p class="text-xs text-on-surface-variant mb-4 uppercase tracking-[0.3em]">Consultoria premium para vistos e viagens. Atendimento direto e especializado.</p>
+            
+            <div class="flex justify-center gap-6 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-12 flex-wrap">
+                <a href="/" class="hover:text-primary transition-colors">Início</a>
+                <a href="/visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+                <a href="/viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                <a href="/blog/" class="hover:text-primary transition-colors">Blog</a>
+                <span class="text-white/10">|</span>
+                <a href="/politica-de-privacidade/" class="hover:text-primary transition-colors">Privacidade</a>
+                <a href="/termos-de-uso/" class="hover:text-primary transition-colors">Termos</a>
+            </div>
+
+            <div class="flex justify-center mb-12">
+                <a href="https://www.instagram.com/knjtur" target="_blank" class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:scale-110 transition-transform">
+                    <img src="https://i.ibb.co/dsZ1CrRd/instagramknj.png" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer">
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-4 text-[9px] uppercase tracking-widest text-on-surface-variant/40">
+                <div class="flex items-center justify-center gap-2">
+                    <i data-lucide="alert-triangle" size="10" class="text-primary"></i> Não somos afiliados ao governo dos Estados Unidos.
+                </div>
+                <div class="flex items-center justify-center gap-1">
+                    Site Desenvolvido por <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold">Orvalia Studio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Pill -->
+    <a href="https://wa.me/5511994085822" target="_blank" class="fixed bottom-8 left-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float flex items-center justify-center">
+        <i data-lucide="message-circle" size="32"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

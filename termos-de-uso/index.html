@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso - KNJ TUR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Outfit:wght@300;400;600;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary/30 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-lg border-b border-white/5 h-20 flex items-center transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="flex items-center group">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105">
+            </a>
+            
+            <div class="flex items-center gap-8">
+                <nav class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-widest text-on-surface-variant">
+                    <a href="/" class="hover:text-primary transition-colors">Home</a>
+                    <a href="/visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+                    <a href="/blog/" class="hover:text-primary transition-colors">Blog</a>
+                    <a href="/viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                    <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="bg-[#25D366] hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full transition-all flex items-center gap-2">
+                        <i data-lucide="message-circle" size="18"></i> WhatsApp
+                    </a>
+                </nav>
+
+                <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors flex items-center">
+                    <i data-lucide="instagram" size="20"></i>
+                </a>
+
+                <button id="menu-btn" class="md:hidden text-white p-2">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-surface hidden flex flex-col items-center justify-center gap-8 text-2xl font-black uppercase italic tracking-tighter">
+        <a href="/">Home</a>
+        <a href="/visto-americano/">Guia Visto</a>
+        <a href="/blog/">Blog</a>
+        <a href="/viagens/">Viagens</a>
+        <a href="https://wa.me/5511994085822" class="text-primary border-2 border-primary px-8 py-4 rounded-full">WhatsApp</a>
+        <a href="https://www.instagram.com/knjtur" target="_blank" class="flex items-center gap-2 text-white hover:text-primary">
+            <i data-lucide="instagram" size="32"></i> Instagram
+        </a>
+    </div>
+
+    <main class="flex-1 pt-32 pb-20">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-display font-black text-white mb-12 tracking-tight">Termos de Uso</h1>
+            
+            <div class="prose prose-invert prose-orange max-w-none space-y-8 text-on-surface-variant leading-relaxed">
+                <p class="text-xl italic">Ao acessar nosso site, você concorda com os termos abaixo.</p>
+                
+                <p>Nosso objetivo é oferecer informações e serviços de turismo, viagens internacionais e assessoria para visto americano.</p>
+                
+                <p class="bg-primary/10 p-6 rounded-2xl border border-primary/20 text-white font-bold">A gente trabalha pra te orientar da melhor forma possível, mas é importante deixar claro que a aprovação do visto depende exclusivamente do consulado americano.</p>
+                
+                <h2 class="text-white text-2xl font-bold mt-12 mb-4">Ao usar nosso site, você se compromete a:</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Informar dados verdadeiros</li>
+                    <li>Não usar o site para fins ilegais</li>
+                    <li>Respeitar os conteúdos disponíveis</li>
+                </ul>
+
+                <p>Todo o conteúdo do site é protegido e não pode ser copiado sem autorização.</p>
+                
+                <p>Podemos atualizar esses termos a qualquer momento.</p>
+
+                <div class="pt-12">
+                    <a href="/" class="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm hover:underline">
+                        <i data-lucide="arrow-left" size="16"></i> Voltar para Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-20 border-t border-white/5 text-center">
+        <div class="container mx-auto px-6">
+            <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 w-auto mb-12 mx-auto">
+            <p class="text-xs text-on-surface-variant mb-4 uppercase tracking-[0.3em] leading-loose">
+                Especialistas em visto americano e viagens nacionais, internacionais e pacotes personalizados completos.<br>
+                <span class="text-white block mt-2">Atendimento rápido e direto pelo WhatsApp.</span>
+            </p>
+            <div class="text-[10px] text-on-surface-variant/60 mb-8 uppercase tracking-widest flex flex-col gap-2">
+                <div>@2026 KNJ TUR | Jardim Dom Bosco, Indaiatuba, SP</div>
+                <div><a href="https://wa.me/5511994085822" class="text-white hover:text-primary">+55 (11) 99408-5822</a></div>
+            </div>
+            
+            <div class="flex justify-center gap-6 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-12 flex-wrap">
+                <a href="/" class="hover:text-primary transition-colors">Início</a>
+                <a href="/visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+                <a href="/viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                <a href="/blog/" class="hover:text-primary transition-colors">Blog</a>
+                <span class="text-white/10">|</span>
+                <a href="/politica-de-privacidade/" class="hover:text-primary transition-colors">Política de Privacidade</a>
+                <a href="/termos-de-uso/" class="hover:text-primary transition-colors">Termos de Uso</a>
+            </div>
+
+            <div class="flex justify-center mb-12">
+                <a href="https://www.instagram.com/knjtur" target="_blank" class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:scale-110 transition-transform">
+                    <img src="https://i.ibb.co/dsZ1CrRd/instagramknj.png" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer">
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-4 text-[9px] uppercase tracking-widest text-on-surface-variant/40">
+                <div class="flex items-center justify-center gap-2">
+                    <i data-lucide="alert-triangle" size="10" class="text-primary"></i> Não somos afiliados ao governo dos Estados Unidos.
+                </div>
+                <div class="flex items-center justify-center gap-1">
+                    Site Desenvolvido por <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">Orvalia Studio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

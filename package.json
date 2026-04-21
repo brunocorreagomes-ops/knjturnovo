@@ -1,0 +1,10 @@
+{
+  "name": "knj-tur-estatico",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "build": "echo 'Static build'",
+    "lint": "echo 'Static lint'"
+  }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub de Inteligência & Viagens | KNJ TUR - Estratégia Global</title>
+    <meta name="description" content="Sua central de informações estratégicas sobre imigração, destinos internacionais e dicas preciosas para o viajante moderno. Tudo o que você precisa em um só hub.">
+    
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF8C00',
+                        'primary-dark': '#CC7000',
+                        accent: '#FFD700',
+                        surface: '#0A0A0A',
+                        'surface-variant': '#141414',
+                        'on-surface': '#FFFFFF',
+                        'on-surface-variant': '#A0A0A0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary/30">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-lg border-b border-white/5 h-20 flex items-center transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="flex items-center group">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105">
+            </a>
+            
+            <div class="flex items-center gap-8">
+                <nav class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-widest text-on-surface-variant">
+                    <a href="/" class="hover:text-primary transition-colors">Home</a>
+                    <a href="/visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+                    <a href="/blog/" class="hover:text-primary transition-colors text-primary">Blog</a>
+                    <a href="/viagens/" class="hover:text-primary transition-colors border-b-2 border-primary pb-1">Viagens</a>
+                    <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="bg-[#25D366] hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full transition-all flex items-center gap-2">
+                        <i data-lucide="message-circle" size="18"></i> WhatsApp
+                    </a>
+                </nav>
+
+                <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors flex items-center">
+                    <i data-lucide="instagram" size="20"></i>
+                </a>
+
+                <button id="menu-btn" class="md:hidden text-white p-2">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-surface flex flex-col items-center justify-center gap-8 text-2xl font-black uppercase italic tracking-tighter">
+        <a href="/">Home</a>
+        <a href="/visto-americano/">Guia Visto</a>
+        <a href="/blog/" class="text-primary">Blog</a>
+        <a href="/viagens/" class="hover:text-primary">Viagens</a>
+        <a href="https://wa.me/5511994085822" class="text-primary border-2 border-primary px-8 py-4 rounded-full">WhatsApp</a>
+        <a href="https://www.instagram.com/knjtur" target="_blank" class="flex items-center gap-2 text-white hover:text-primary">
+            <i data-lucide="instagram" size="32"></i> Instagram
+        </a>
+    </div>
+
+    <main class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <header class="mb-12 md:mb-16">
+                <div class="text-primary text-[10px] md:text-xs font-bold uppercase tracking-[0.4em] mb-4">Hub de Inteligência KNJ</div>
+                <h1 class="text-4xl md:text-5xl lg:text-8xl font-display font-black leading-[1] text-white tracking-tighter mb-8">
+                    Conhecimento <br> <span class="text-primary italic">Estratégico</span> Global.
+                </h1>
+                <p class="text-on-surface-variant max-w-3xl text-lg md:text-xl leading-relaxed">
+                    Mais que um blog, uma central de informações precisas. Dos bastidores do visto americano às tendências dos destinos mais exclusivos do mundo.
+                </p>
+            </header>
+
+            <!-- Categories Filter -->
+            <div class="flex flex-wrap gap-3 md:gap-4 mb-16 pb-8 border-b border-white/5">
+                <button class="px-6 py-2.5 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-widest transition-all">Tudo</button>
+                <button class="px-6 py-2.5 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant text-xs font-bold uppercase tracking-widest hover:border-primary/50 transition-all">Vistos</button>
+                <button class="px-6 py-2.5 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant text-xs font-bold uppercase tracking-widest hover:border-primary/50 transition-all">Destinos</button>
+                <button class="px-6 py-2.5 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant text-xs font-bold uppercase tracking-widest hover:border-primary/50 transition-all">Dicas de Viagem</button>
+                <button class="px-6 py-2.5 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant text-xs font-bold uppercase tracking-widest hover:border-primary/50 transition-all">Notícias Globais</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                <!-- Post 1 -->
+                <a href="/blog/visto-americano-por-onde-comecar/" class="group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://i.ibb.co/m5sX9DXr/knj-visto-blog.webp" alt="Visto Americano: O Guia Definitivo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer">
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="flex items-center gap-4 mb-4 text-xs font-bold uppercase tracking-widest text-primary">
+                            <span>Vistos & Estratégia</span>
+                            <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+                            <div class="flex items-center gap-1 text-on-surface-variant">
+                                <i data-lucide="calendar" size="12"></i>
+                                <span>Abril, 2026</span>
+                            </div>
+                        </div>
+                        <h2 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">Visto Americano: O Guia Definitivo para Começar do Zero em 2026</h2>
+                        <p class="text-on-surface-variant text-sm line-clamp-3 leading-relaxed mb-6">Está perdido e não sabe como iniciar seu processo do visto americano? Descubra o passo a passo estratégico para evitar negativas.</p>
+                        <div class="mt-auto pt-4 flex items-center gap-2 text-primary text-sm font-bold uppercase tracking-widest">
+                            Ler Artigo Completo
+                            <i data-lucide="chevron-right" size="16" class="transition-transform group-hover:translate-x-2"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Post 2 -->
+                <a href="/blog/ees-passo-a-passo-completo-europa/" class="group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://i.ibb.co/G41sDLxk/europaees-3.png" alt="EES Europa: Guia Completo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="flex items-center gap-4 mb-4 text-xs font-bold uppercase tracking-widest text-primary">
+                            <span>Mundo & Imigração</span>
+                            <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+                            <div class="flex items-center gap-1 text-on-surface-variant">
+                                <i data-lucide="calendar" size="12"></i>
+                                <span>Abril, 2026</span>
+                            </div>
+                        </div>
+                        <h2 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">EES Europa: Guia Completo Passo a Passo para a Imigração em 2026</h2>
+                        <p class="text-on-surface-variant text-sm line-clamp-3 leading-relaxed mb-6">O novo sistema de entradas e saídas da Europa (EES) mudou as regras para turistas brasileiros. Veja como se preparar para o controle biométrico.</p>
+                        <div class="mt-auto pt-4 flex items-center gap-2 text-primary text-sm font-bold uppercase tracking-widest">
+                            Ler Artigo Completo
+                            <i data-lucide="chevron-right" size="16" class="transition-transform group-hover:translate-x-2"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Post 3 -->
+                <a href="/blog/consultoria-vs-assessoria-diferenca/" class="group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://i.ibb.co/xKNms918/consultoriaxassessoria.webp" alt="Consultoria vs Assessoria" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer">
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="flex items-center gap-4 mb-4 text-xs font-bold uppercase tracking-widest text-primary">
+                            <span>Diferenciais</span>
+                            <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+                            <div class="flex items-center gap-1 text-on-surface-variant">
+                                <i data-lucide="calendar" size="12"></i>
+                                <span>Abril, 2026</span>
+                            </div>
+                        </div>
+                        <h2 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">Consultoria vs Assessoria de Visto: A Verdade que Ninguém te Conta</h2>
+                        <p class="text-on-surface-variant text-sm line-clamp-3 leading-relaxed mb-6">Entenda por que apenas preencher o formulário não é o suficiente para garantir sua aprovação no consulado americano.</p>
+                        <div class="mt-auto pt-4 flex items-center gap-2 text-primary text-sm font-bold uppercase tracking-widest">
+                            Ler Artigo Completo
+                            <i data-lucide="chevron-right" size="16" class="transition-transform group-hover:translate-x-2"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Post 4 -->
+                <a href="/blog/entrevista-consulado-americano-guia-pratico/" class="group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://i.ibb.co/xKjQ3zZR/entrevista-visto.webp" alt="Guia Prático de Entrevista" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer">
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="flex items-center gap-4 mb-4 text-xs font-bold uppercase tracking-widest text-primary">
+                            <span>Dicas de Viagem</span>
+                            <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+                            <div class="flex items-center gap-1 text-on-surface-variant">
+                                <i data-lucide="calendar" size="12"></i>
+                                <span>Abril, 2026</span>
+                            </div>
+                        </div>
+                        <h2 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">Entrevista no Consulado Americano: Guia Prático de Postura e Respostas</h2>
+                        <p class="text-on-surface-variant text-sm line-clamp-3 leading-relaxed mb-6">O momento da entrevista é decisivo. Aprenda como se portar, o que vestir e como responder às perguntas do cônsul com segurança.</p>
+                        <div class="mt-auto pt-4 flex items-center gap-2 text-primary text-sm font-bold uppercase tracking-widest">
+                            Ler Artigo Completo
+                            <i data-lucide="chevron-right" size="16" class="transition-transform group-hover:translate-x-2"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Post 5 -->
+                <a href="/blog/renovacao-de-visto-americano-sem-entrevista/" class="group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://i.ibb.co/Wp5wkcym/visto-img.webp" alt="Renovação de Visto" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer">
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="flex items-center gap-4 mb-4 text-xs font-bold uppercase tracking-widest text-primary">
+                            <span>Notícias Globais</span>
+                            <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+                            <div class="flex items-center gap-1 text-on-surface-variant">
+                                <i data-lucide="calendar" size="12"></i>
+                                <span>Abril, 2026</span>
+                            </div>
+                        </div>
+                        <h2 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">Renovação de Visto Americano: Como fazer sem precisar de nova entrevista</h2>
+                        <p class="text-on-surface-variant text-sm line-clamp-3 leading-relaxed mb-6">Seu visto venceu ou está prestes a vencer? Veja se você se enquadra nas regras para renovar sem precisar passar pelo cônsul novamente.</p>
+                        <div class="mt-auto pt-4 flex items-center gap-2 text-primary text-sm font-bold uppercase tracking-widest">
+                            Ler Artigo Completo
+                            <i data-lucide="chevron-right" size="16" class="transition-transform group-hover:translate-x-2"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-20 border-t border-white/5 text-center">
+        <div class="container mx-auto px-6">
+            <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 w-auto mb-12 mx-auto">
+            <p class="text-xs text-on-surface-variant mb-4 uppercase tracking-[0.3em] leading-loose">
+                Especialistas em visto americano e viagens nacionais, internacionais e pacotes personalizados completos.<br>
+                <span class="text-white block mt-2">Atendimento rápido e direto pelo WhatsApp.</span>
+            </p>
+            <div class="text-[10px] text-on-surface-variant/60 mb-8 uppercase tracking-widest flex flex-col gap-2">
+                <div>@2026 KNJ TUR | Jardim Dom Bosco, Indaiatuba, SP</div>
+                <div><a href="https://wa.me/5511994085822" class="text-white hover:text-primary">+55 (11) 99408-5822</a></div>
+            </div>
+            
+            <div class="flex justify-center gap-6 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-12 flex-wrap">
+                <a href="/" class="hover:text-primary transition-colors">Início</a>
+                <a href="/visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+                <a href="/viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                <a href="/blog/" class="hover:text-primary transition-colors">Blog</a>
+                <span class="text-white/10">|</span>
+                <a href="/politica-de-privacidade/" class="hover:text-primary transition-colors">Política de Privacidade</a>
+                <a href="/termos-de-uso/" class="hover:text-primary transition-colors">Termos de Uso</a>
+            </div>
+
+            <div class="flex justify-center mb-12">
+                <a href="https://www.instagram.com/knjtur" target="_blank" class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:scale-110 transition-transform">
+                    <img src="https://i.ibb.co/dsZ1CrRd/instagramknj.png" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer">
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-4 text-[9px] uppercase tracking-widest text-on-surface-variant/40">
+                <div class="flex items-center justify-center gap-2">
+                    <i data-lucide="alert-triangle" size="10" class="text-primary"></i> Não somos afiliados ao governo dos Estados Unidos.
+                </div>
+                <div class="flex items-center justify-center gap-1">
+                    Site Desenvolvido por <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold">Orvalia Studio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Pill -->
+    <a href="https://wa.me/5511994085822" target="_blank" class="fixed bottom-8 left-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float flex items-center justify-center">
+        <i data-lucide="message-circle" size="32"></i>
+    </a>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 z-50 bg-primary text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 opacity-0 invisible translate-y-10 flex items-center justify-center">
+        <i data-lucide="arrow-up" size="32"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
