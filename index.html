@@ -37,8 +37,12 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-lg border-b border-white/5 h-20 flex items-center transition-all duration-300">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="flex items-center group">
+            <a href="index.html" class="flex items-center gap-4 group">
                 <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105">
+                <div class="hidden lg:flex flex-col">
+                    <span class="text-white font-display font-black text-lg tracking-tighter leading-none italic">KNJ TUR</span>
+                    <span class="text-[9px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">Consultoria de Vistos e Viagens</span>
+                </div>
             </a>
             
             <div class="flex items-center gap-8">
@@ -53,7 +57,7 @@
                 </nav>
 
                 <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors flex items-center">
-                    <i data-lucide="instagram" size="20"></i>
+                    <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-6 h-6 object-contain" referrerPolicy="no-referrer">
                 </a>
 
                 <!-- Menu Mobile Btn -->
@@ -78,9 +82,16 @@
 
     <main>
         <!-- HERO -->
-        <section class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
-            <div class="absolute top-1/4 left-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/10 rounded-full blur-[80px] md:blur-[120px] -translate-x-1/2"></div>
-            <div class="absolute bottom-1/4 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-orange-500/10 rounded-full blur-[80px] md:blur-[120px] translate-x-1/2"></div>
+        <section class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden bg-surface">
+            <!-- Hero Image Background -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://i.ibb.co/yFDvT9MN/knj-hero.webp" alt="Visto Americano Hero" class="w-full h-full object-cover opacity-40 grayscale-0" referrerPolicy="no-referrer">
+                <div class="absolute inset-0 bg-gradient-to-b from-surface via-surface/40 to-surface"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-surface"></div>
+            </div>
+
+            <div class="absolute top-1/4 left-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/10 rounded-full blur-[80px] md:blur-[120px] -translate-x-1/2 opacity-50"></div>
+            <div class="absolute bottom-1/4 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-orange-500/10 rounded-full blur-[80px] md:blur-[120px] translate-x-1/2 opacity-50"></div>
             
             <div class="container mx-auto px-6 text-center relative z-10">
                 <div class="max-w-4xl mx-auto">
@@ -88,14 +99,14 @@
                         <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
                         CONSULTORIA ESTRATÉGICA
                     </div>
-                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black leading-[1.1] text-white mb-8 tracking-tight">
+                    <h1 class="reveal reveal-up text-4xl md:text-6xl lg:text-7xl font-display font-black leading-[1.1] text-white mb-8 tracking-tight">
                         Visto Americano com <br>
                         <span class="text-primary italic">Alta Chance</span> de Aprovação
                     </h1>
-                    <p class="text-lg md:text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">
+                    <p class="reveal reveal-up reveal-delay-1 text-lg md:text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">
                         Consultoria estratégica para visto americano com suporte completo — do processo até sua viagem organizada com segurança, economia e zero erros.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div class="reveal reveal-up reveal-delay-2 flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="https://wa.me/5511994085822?text=Olá,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20visto%20americano" class="bg-[#25D366] hover:bg-opacity-90 text-white px-10 py-5 rounded-full text-lg font-bold flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-2xl shadow-[#25D366]/20">
                             Falar com Especialista em Visto <i data-lucide="message-circle" class="w-5 h-5"></i>
                         </a>
@@ -107,20 +118,20 @@
         <!-- PROCESSO -->
         <section class="py-24 bg-surface relative">
             <div class="container mx-auto px-6 max-w-5xl">
-                <div class="text-center mb-16">
+                <div class="text-center mb-16 reveal reveal-up">
                     <h2 class="text-3xl md:text-5xl font-display font-black text-white mb-6 uppercase italic tracking-tighter">Como funciona o <span class="text-primary">processo</span></h2>
                     <p class="text-on-surface-variant text-lg">Nosso método exclusivo para garantir sua tranquilidade.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <div class="space-y-6">
-                        <div class="flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
+                        <div class="reveal reveal-left reveal-delay-1 flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
                             <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary shrink-0">
                                 <i data-lucide="check" size="20"></i>
                             </div>
                             <span class="text-lg font-bold text-white uppercase tracking-tight">Análise estratégica do perfil</span>
                         </div>
-                        <div class="flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
+                        <div class="reveal reveal-left reveal-delay-2 flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
                             <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary shrink-0">
                                 <i data-lucide="check" size="20"></i>
                             </div>
@@ -128,13 +139,13 @@
                         </div>
                     </div>
                     <div class="space-y-6">
-                        <div class="flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
+                        <div class="reveal reveal-right reveal-delay-1 flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
                             <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary shrink-0">
                                 <i data-lucide="check" size="20"></i>
                             </div>
                             <span class="text-lg font-bold text-white uppercase tracking-tight">Agendamento no consulado</span>
                         </div>
-                        <div class="flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
+                        <div class="reveal reveal-right reveal-delay-2 flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
                             <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary shrink-0">
                                 <i data-lucide="check" size="20"></i>
                             </div>
@@ -148,14 +159,14 @@
         <!-- ERROS -->
         <section class="py-32 bg-surface-variant relative overflow-hidden">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-20">
+                <div class="text-center mb-20 reveal reveal-up">
                     <div class="text-primary text-[10px] font-bold uppercase tracking-[0.4em] mb-4">ALERTA</div>
                     <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-6 uppercase italic tracking-tighter">O que <span class="text-primary">reprova</span> no visto</h2>
                     <p class="text-on-surface-variant text-lg">Evite os erros fatais que barram milhares de brasileiros todos os anos.</p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <div class="group p-10 rounded-[2.5rem] bg-surface border border-white/5 hover:border-primary/30 transition-all">
+                    <div class="reveal reveal-up reveal-delay-1 group p-10 rounded-[2.5rem] bg-surface border border-white/5 hover:border-primary/30 transition-all">
                         <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
                             <i data-lucide="file-warning" class="text-primary" size="24"></i>
                         </div>
@@ -163,7 +174,7 @@
                         <p class="text-on-surface-variant leading-relaxed">Dados inconsistentes ou mal formulados podem causar negativa imediata e permanente.</p>
                     </div>
 
-                    <div class="group p-10 rounded-[2.5rem] bg-surface border border-white/5 hover:border-primary/30 transition-all">
+                    <div class="reveal reveal-up reveal-delay-2 group p-10 rounded-[2.5rem] bg-surface border border-white/5 hover:border-primary/30 transition-all">
                         <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
                             <i data-lucide="user-x" class="text-primary" size="24"></i>
                         </div>
@@ -171,7 +182,7 @@
                         <p class="text-on-surface-variant leading-relaxed">Falta de confiança e respostas vagas geram desconfiança imediata no oficial consular.</p>
                     </div>
 
-                    <div class="group p-10 rounded-[2.5rem] bg-surface border border-white/5 hover:border-primary/30 transition-all">
+                    <div class="reveal reveal-up reveal-delay-3 group p-10 rounded-[2.5rem] bg-surface border border-white/5 hover:border-primary/30 transition-all">
                         <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
                             <i data-lucide="anchor" class="text-primary" size="24"></i>
                         </div>
@@ -185,13 +196,13 @@
         <!-- UPSELL VIAGEM -->
         <section class="py-32 bg-surface">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-6xl font-display font-black text-white mb-6 uppercase italic tracking-tighter">Seu visto aprovado é <span class="text-primary">só o começo</span></h2>
-                <p class="text-on-surface-variant max-w-2xl mx-auto mb-16 text-lg">
+                <h2 class="reveal reveal-up text-3xl md:text-6xl font-display font-black text-white mb-6 uppercase italic tracking-tighter">Seu visto aprovado é <span class="text-primary">só o começo</span></h2>
+                <p class="reveal reveal-up reveal-delay-1 text-on-surface-variant max-w-2xl mx-auto mb-16 text-lg">
                     A maioria das pessoas consegue o visto, mas erra no planejamento. Nós cuidamos de tudo para você viajar com segurança e economia real.
                 </p>
 
                 <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto text-left mb-16">
-                    <div class="space-y-4">
+                    <div class="space-y-4 reveal reveal-left reveal-delay-2">
                         <div class="flex items-center gap-3 text-on-surface-variant font-medium">
                             <i data-lucide="plane" class="text-primary" size="18"></i> Passagens com melhor custo-benefício
                         </div>
@@ -202,7 +213,7 @@
                             <i data-lucide="map" class="text-primary" size="18"></i> Roteiro otimizado
                         </div>
                     </div>
-                    <div class="space-y-4">
+                    <div class="space-y-4 reveal reveal-right reveal-delay-2">
                         <div class="flex items-center gap-3 text-on-surface-variant font-medium">
                             <i data-lucide="calendar" class="text-primary" size="18"></i> Planejamento completo
                         </div>
@@ -215,7 +226,7 @@
                     </div>
                 </div>
 
-                <a href="https://wa.me/5511994085822?text=Olá,%20já%20tenho%20visto%20e%20preciso%20de%20ajuda%20com%20meu%20planejamento%20de%20viagem" class="bg-primary hover:bg-primary-dark text-white px-10 py-5 rounded-full text-lg font-bold transition-all transform hover:scale-105 inline-flex items-center gap-3">
+                <a href="https://wa.me/5511994085822?text=Olá,%20já%20tenho%20visto%20e%20preciso%20de%20ajuda%20com%20meu%20planejamento%20de%20viagem" class="reveal reveal-up reveal-delay-3 bg-primary hover:bg-primary-dark text-white px-10 py-5 rounded-full text-lg font-bold transition-all transform hover:scale-105 inline-flex items-center gap-3">
                     Quero Ajuda Completa <i data-lucide="sparkles" size="20"></i>
                 </a>
             </div>
@@ -227,27 +238,27 @@
                 <h2 class="text-4xl md:text-5xl font-display font-black text-center text-white mb-16 uppercase italic tracking-tighter">Perguntas <span class="text-primary">Frequentes</span></h2>
                 
                 <div class="space-y-12">
-                    <div class="p-8 rounded-[2rem] bg-surface border border-white/5">
+                    <div class="reveal reveal-up reveal-delay-1 p-8 rounded-[2rem] bg-surface border border-white/5">
                         <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Como tirar visto americano?</h3>
                         <p class="text-on-surface-variant leading-relaxed">O processo envolve preenchimento do formulário DS-160, pagamento da MRV, agendamento de biometria/entrevista e a entrevista final. Nossa consultoria guia você em todas essas etapas, eliminando dúvidas e erros.</p>
                     </div>
 
-                    <div class="p-8 rounded-[2rem] bg-surface border border-white/5">
+                    <div class="reveal reveal-up reveal-delay-2 p-8 rounded-[2rem] bg-surface border border-white/5">
                         <h3 class="text-xl md:text-2xl font-bold text-white mb-4">O que pode reprovar o visto?</h3>
                         <p class="text-on-surface-variant leading-relaxed">Inconsistência de dados entre o formulário e a fala, falta de vínculos comprovados com o Brasil e insegurança durante a entrevista são os principais fatores de negativa.</p>
                     </div>
 
-                    <div class="p-8 rounded-[2rem] bg-surface border border-white/5">
+                    <div class="reveal reveal-up reveal-delay-3 p-8 rounded-[2rem] bg-surface border border-white/5">
                         <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Quanto custa tirar visto?</h3>
                         <p class="text-on-surface-variant leading-relaxed">O custo total inclui a taxa consular obrigatória (MRV) e o investimento em nossa consultoria especializada. Auxiliamos você a investir da maneira correta, evitando retrabalho e gastos com novas taxas por reprovação.</p>
                     </div>
 
-                    <div class="p-8 rounded-[2rem] bg-surface border border-white/5">
+                    <div class="reveal reveal-up reveal-delay-4 p-8 rounded-[2rem] bg-surface border border-white/5">
                         <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Posso solicitar visto para familiar?</h3>
                         <p class="text-on-surface-variant leading-relaxed">Sim, é possível solicitar o visto para familiares (cônjuges e filhos). Embora cada um precise de seu próprio formulário e taxa, a entrevista pode ser agendada em conjunto, o que facilita a análise dos vínculos familiares e financeiros do grupo.</p>
                     </div>
 
-                    <div class="p-8 rounded-[2rem] bg-surface border border-white/5">
+                    <div class="reveal reveal-up reveal-delay-5 p-8 rounded-[2rem] bg-surface border border-white/5">
                         <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Qual a validade do visto americano?</h3>
                         <p class="text-on-surface-variant leading-relaxed">Para a categoria de turismo e negócios (B1/B2), o visto para brasileiros costuma ter validade de 10 anos. No entanto, o tempo de permanência autorizado em cada entrada é decidido pelo oficial de imigração no aeroporto, sendo geralmente de 6 meses por viagem.</p>
                     </div>
@@ -257,7 +268,7 @@
 
         <!-- CTA FINAL -->
         <section class="py-32 bg-surface text-center px-6">
-            <div class="container mx-auto">
+            <div class="container mx-auto reveal reveal-up">
                 <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-10 leading-tight uppercase italic tracking-tighter">Pronto para tirar seu visto <br> com <span class="text-primary">segurança</span>?</h2>
                 <a href="https://wa.me/5511994085822" class="bg-[#25D366] hover:bg-opacity-90 text-white px-12 py-6 rounded-full text-xl font-bold transition-all transform hover:scale-105 inline-flex items-center gap-3 shadow-2xl shadow-[#25D366]/20">
                     Falar com Especialista Agora <i data-lucide="message-circle" size="24"></i>
@@ -267,40 +278,84 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-surface py-20 border-t border-white/5 text-center">
+    <footer class="bg-surface py-24 border-t border-white/5 reveal reveal-up">
         <div class="container mx-auto px-6">
-            <div class="mb-12">
-                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto mx-auto opacity-80 mb-4">
-                <div class="text-primary font-display font-black text-2xl tracking-tighter italic">KNJ</div>
-            </div>
-            
-            <p class="text-xs text-on-surface-variant mb-8 uppercase tracking-[0.3em] max-w-2xl mx-auto leading-loose">
-                Especialistas em visto americano e viagens nacionais, internacionais e pacotes personalizados completos.<br>
-                <span class="text-white block mt-2">Atendimento rápido e direto pelo WhatsApp.</span>
-            </p>
-            
-            <div class="text-[10px] text-on-surface-variant/60 mb-12 uppercase tracking-widest flex flex-col gap-3 font-medium">
-                <div>@2026 KNJ TUR | JARDIM DOM BOSCO, INDAIATUBA, SP</div>
-                <a href="mailto:KENJI@KNJTUR.COM" class="text-white/40 hover:text-primary transition-colors tracking-[0.2em]">KENJI@KNJTUR.COM</a>
-            </div>
-            
-            <div class="flex justify-center gap-8 text-[11px] font-black uppercase tracking-widest text-on-surface-variant mb-12">
-                <a href="politica-de-privacidade/" class="hover:text-primary transition-colors">Privacidade</a>
-                <span class="text-white/10 font-thin italic">|</span>
-                <a href="termos-de-uso/" class="hover:text-primary transition-colors">Termos</a>
-                <span class="text-white/10 font-thin italic">|</span>
-                <a href="https://wa.me/5511994085822" class="hover:text-primary transition-colors">Contato</a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center md:text-left">
+                <!-- Col 1: Brand -->
+                <div class="space-y-8">
+                    <div>
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto mx-auto md:mx-0 opacity-90 mb-4" loading="lazy">
+                        <div class="text-primary font-display font-black text-2xl tracking-tighter italic">KNJ TUR</div>
+                    </div>
+                    <p class="text-xs text-on-surface-variant uppercase tracking-widest leading-loose max-w-[280px] mx-auto md:mx-0">
+                        Consultoria estratégica para vistos americanos e planejamento de viagens internacionais com foco em aprovação e economia.
+                    </p>
+                    <div class="flex justify-center md:justify-start gap-6">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                            <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
+                        </a>
+                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all">
+                            <i data-lucide="message-circle" size="18"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Info -->
+                <div class="space-y-8">
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Navegação</h4>
+                    <nav class="flex flex-col gap-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+                        <a href="index.html" class="hover:text-primary transition-colors">Início</a>
+                        <a href="visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+                        <a href="blog/" class="hover:text-primary transition-colors">Blog KNJ</a>
+                        <a href="viagens/" class="hover:text-primary transition-colors text-primary">Viagens & Pacotes</a>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Contato -->
+                <div class="space-y-8">
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Contato</h4>
+                    <div class="flex flex-col gap-6 text-[10px] text-on-surface-variant uppercase tracking-widest font-medium">
+                        <div class="flex items-center gap-3 justify-center md:justify-start">
+                            <i data-lucide="map-pin" class="text-primary" size="14"></i>
+                            Jardim Dom Bosco, Indaiatuba, SP
+                        </div>
+                        <a href="mailto:kenji@knjtur.com" class="flex items-center gap-3 justify-center md:justify-start hover:text-primary transition-colors">
+                            <i data-lucide="mail" class="text-primary" size="14"></i>
+                            kenji@knjtur.com
+                        </a>
+                        <a href="https://wa.me/5511994085822" class="flex items-center gap-3 justify-center md:justify-start hover:text-primary transition-colors">
+                            <i data-lucide="phone" class="text-primary" size="14"></i>
+                            (11) 99408-5822
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 4: Bio/Legal -->
+                <div class="space-y-8">
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Segurança</h4>
+                    <div class="p-6 rounded-2xl bg-surface-variant border border-white/5 space-y-4">
+                        <div class="flex items-center gap-2 text-[9px] uppercase tracking-widest text-primary font-bold">
+                            <i data-lucide="shield-check" size="14"></i> Consultoria Auditada
+                        </div>
+                        <p class="text-[9px] text-on-surface-variant leading-relaxed uppercase tracking-widest">
+                            Análise técnica rigorosa baseada nas normas consulares vigentes para maximizar sua chance de sucesso.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="text-[9px] uppercase tracking-[0.4em] text-on-surface-variant/30 font-bold leading-relaxed">
+                            <i data-lucide="alert-triangle" size="10" class="inline text-primary/50 mr-1"></i> Não somos afiliados ao Governo dos EUA.
+                        </p>
+                        <div class="flex justify-center md:justify-start gap-4 text-[9px] font-bold uppercase tracking-widest text-on-surface-variant/50">
+                            <a href="politica-de-privacidade/" class="hover:text-primary">Privacidade</a>
+                            <a href="termos-de-uso/" class="hover:text-primary">Termos</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="flex justify-center mb-16">
-                <a href="https://www.instagram.com/knjtur" target="_blank" class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:scale-110 transition-transform">
-                    <img src="https://i.ibb.co/dsZ1CrRd/instagramknj.png" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer">
-                </a>
-            </div>
-
-            <div class="flex flex-col gap-6">
-                <div class="flex items-center justify-center gap-2 text-[9px] uppercase tracking-[0.4em] text-on-surface-variant/30 font-bold">
-                    <i data-lucide="alert-triangle" size="10" class="text-primary/50"></i> NÃO SOMOS AFILIADOS AO GOVERNO DOS ESTADOS UNIDOS.
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-[10px] text-on-surface-variant/40 uppercase tracking-widest font-medium">
+                    @2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS
                 </div>
                 <div class="text-[8px] uppercase tracking-widest text-on-surface-variant/20">
                     SITE DESENVOLVIDO POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>

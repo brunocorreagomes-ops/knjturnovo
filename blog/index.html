@@ -37,8 +37,12 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-lg border-b border-white/5 h-20 flex items-center transition-all duration-300">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="../index.html" class="flex items-center group">
+            <a href="../index.html" class="flex items-center gap-4 group">
                 <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105">
+                <div class="hidden lg:flex flex-col">
+                    <span class="text-white font-display font-black text-lg tracking-tighter leading-none italic">KNJ TUR</span>
+                    <span class="text-[9px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">Consultoria de Vistos e Viagens</span>
+                </div>
             </a>
             
             <div class="flex items-center gap-8">
@@ -53,7 +57,7 @@
                 </nav>
 
                 <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors flex items-center">
-                    <i data-lucide="instagram" size="20"></i>
+                    <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-6 h-6 object-contain" referrerPolicy="no-referrer">
                 </a>
 
                 <button id="menu-btn" class="md:hidden text-white p-2">
@@ -71,24 +75,24 @@
         <a href="../viagens/" class="hover:text-primary">Viagens</a>
         <a href="https://wa.me/5511994085822" class="text-primary border-2 border-primary px-8 py-4 rounded-full">WhatsApp</a>
         <a href="https://www.instagram.com/knjtur" target="_blank" class="flex items-center gap-2 text-white hover:text-primary">
-            <i data-lucide="instagram" size="32"></i> Instagram
+            <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-8 h-8 object-contain" referrerPolicy="no-referrer"> Instagram
         </a>
     </div>
 
     <main class="pt-32 pb-20">
         <div class="container mx-auto px-6">
-            <header class="mb-12 md:mb-16">
+            <header class="mb-12 md:mb-16 reveal reveal-up">
                 <div class="text-primary text-[10px] md:text-xs font-bold uppercase tracking-[0.4em] mb-4">Hub de Inteligência KNJ</div>
                 <h1 class="text-4xl md:text-5xl lg:text-8xl font-display font-black leading-[1] text-white tracking-tighter mb-8">
                     Conhecimento <br> <span class="text-primary italic">Estratégico</span> Global.
                 </h1>
-                <p class="text-on-surface-variant max-w-3xl text-lg md:text-xl leading-relaxed">
+                <p class="text-on-surface-variant max-w-3xl text-lg md:text-xl leading-relaxed reveal reveal-up reveal-delay-1">
                     Mais que um blog, uma central de informações precisas. Dos bastidores do visto americano às tendências dos destinos mais exclusivos do mundo.
                 </p>
             </header>
 
             <!-- Categories Filter -->
-            <div class="flex flex-wrap gap-3 md:gap-4 mb-16 pb-8 border-b border-white/5">
+            <div class="flex flex-wrap gap-3 md:gap-4 mb-16 pb-8 border-b border-white/5 reveal reveal-up reveal-delay-2">
                 <button class="px-6 py-2.5 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-widest transition-all">Tudo</button>
                 <button class="px-6 py-2.5 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant text-xs font-bold uppercase tracking-widest hover:border-primary/50 transition-all">Vistos</button>
                 <button class="px-6 py-2.5 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant text-xs font-bold uppercase tracking-widest hover:border-primary/50 transition-all">Destinos</button>
@@ -96,11 +100,11 @@
                 <button class="px-6 py-2.5 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant text-xs font-bold uppercase tracking-widest hover:border-primary/50 transition-all">Notícias Globais</button>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+            <div id="blog-posts-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 mb-16">
                 <!-- Post 1 -->
-                <a href="visto-americano-por-onde-comecar/" class="group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
+                <a href="visto-americano-por-onde-comecar/" class="blog-post reveal reveal-up reveal-delay-1 group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
                     <div class="aspect-[16/10] overflow-hidden">
-                        <img src="https://i.ibb.co/m5sX9DXr/knj-visto-blog.webp" alt="Visto Americano: O Guia Definitivo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer">
+                        <img src="https://i.ibb.co/m5sX9DXr/knj-visto-blog.webp" alt="Visto Americano: O Guia Definitivo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" loading="lazy">
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="flex items-center gap-4 mb-4 text-xs font-bold uppercase tracking-widest text-primary">
@@ -124,9 +128,9 @@
                 </a>
 
                 <!-- Post 2 -->
-                <a href="ees-passo-a-passo-completo-europa/" class="group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
+                <a href="ees-passo-a-passo-completo-europa/" class="blog-post reveal reveal-up reveal-delay-2 group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
                     <div class="aspect-[16/10] overflow-hidden">
-                        <img src="https://i.ibb.co/G41sDLxk/europaees-3.png" alt="EES Europa: Guia Completo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="https://i.ibb.co/G41sDLxk/europaees-3.png" alt="EES Europa: Guia Completo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="flex items-center gap-4 mb-4 text-xs font-bold uppercase tracking-widest text-primary">
@@ -150,9 +154,9 @@
                 </a>
 
                 <!-- Post 3 -->
-                <a href="consultoria-vs-assessoria-diferenca/" class="group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
+                <a href="consultoria-vs-assessoria-diferenca/" class="blog-post reveal reveal-up reveal-delay-3 group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
                     <div class="aspect-[16/10] overflow-hidden">
-                        <img src="https://i.ibb.co/xKNms918/consultoriaxassessoria.webp" alt="Consultoria vs Assessoria" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer">
+                        <img src="https://i.ibb.co/xKNms918/consultoriaxassessoria.webp" alt="Consultoria vs Assessoria" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" loading="lazy">
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="flex items-center gap-4 mb-4 text-xs font-bold uppercase tracking-widest text-primary">
@@ -176,9 +180,9 @@
                 </a>
 
                 <!-- Post 4 -->
-                <a href="entrevista-consulado-americano-guia-pratico/" class="group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
+                <a href="entrevista-consulado-americano-guia-pratico/" class="blog-post reveal reveal-up group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col hidden">
                     <div class="aspect-[16/10] overflow-hidden">
-                        <img src="https://i.ibb.co/xKjQ3zZR/entrevista-visto.webp" alt="Guia Prático de Entrevista" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer">
+                        <img src="https://i.ibb.co/xKjQ3zZR/entrevista-visto.webp" alt="Guia Prático de Entrevista" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" loading="lazy">
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="flex items-center gap-4 mb-4 text-xs font-bold uppercase tracking-widest text-primary">
@@ -202,9 +206,9 @@
                 </a>
 
                 <!-- Post 5 -->
-                <a href="renovacao-de-visto-americano-sem-entrevista/" class="group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col">
+                <a href="renovacao-de-visto-americano-sem-entrevista/" class="blog-post reveal reveal-up group bg-surface-variant/30 border border-white/5 rounded-[2.5rem] overflow-hidden hover:border-primary/40 transition-all duration-500 flex flex-col hidden">
                     <div class="aspect-[16/10] overflow-hidden">
-                        <img src="https://i.ibb.co/Wp5wkcym/visto-img.webp" alt="Renovação de Visto" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer">
+                        <img src="https://i.ibb.co/Wp5wkcym/visto-img.webp" alt="Renovação de Visto" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" loading="lazy">
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="flex items-center gap-4 mb-4 text-xs font-bold uppercase tracking-widest text-primary">
@@ -227,44 +231,99 @@
                     </div>
                 </a>
             </div>
+
+            <!-- Pagination/Load More -->
+            <div class="flex justify-center mb-32 reveal reveal-up">
+                <button id="load-more-btn" class="px-12 py-5 bg-white/5 border border-white/10 text-white text-xs font-black uppercase tracking-[0.3em] italic rounded-full hover:bg-primary hover:border-primary hover:text-white transition-all duration-500 flex items-center gap-4 group">
+                    <span>Carregar Conteúdos Adicionais</span>
+                    <i data-lucide="plus-circle" size="20" class="group-hover:rotate-180 transition-transform duration-500"></i>
+                </button>
+            </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-surface py-20 border-t border-white/5 text-center">
+    <footer class="bg-surface py-24 border-t border-white/5 reveal reveal-up">
         <div class="container mx-auto px-6">
-            <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 w-auto mb-12 mx-auto">
-            <p class="text-xs text-on-surface-variant mb-4 uppercase tracking-[0.3em] leading-loose">
-                Especialistas em visto americano e viagens nacionais, internacionais e pacotes personalizados completos.<br>
-                <span class="text-white block mt-2">Atendimento rápido e direto pelo WhatsApp.</span>
-            </p>
-            <div class="text-[10px] text-on-surface-variant/60 mb-8 uppercase tracking-widest flex flex-col gap-2">
-                <div>@2026 KNJ TUR | Jardim Dom Bosco, Indaiatuba, SP</div>
-                <div><a href="https://wa.me/5511994085822" class="text-white hover:text-primary">+55 (11) 99408-5822</a></div>
-            </div>
-            
-            <div class="flex justify-center gap-6 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-12 flex-wrap">
-                <a href="../index.html" class="hover:text-primary transition-colors">Início</a>
-                <a href="../visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
-                <a href="../viagens/" class="hover:text-primary transition-colors">Viagens</a>
-                <a href="./" class="hover:text-primary transition-colors">Blog</a>
-                <span class="text-white/10">|</span>
-                <a href="../politica-de-privacidade/" class="hover:text-primary transition-colors">Política de Privacidade</a>
-                <a href="../termos-de-uso/" class="hover:text-primary transition-colors">Termos de Uso</a>
-            </div>
-
-            <div class="flex justify-center mb-12">
-                <a href="https://www.instagram.com/knjtur" target="_blank" class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:scale-110 transition-transform">
-                    <img src="https://i.ibb.co/dsZ1CrRd/instagramknj.png" alt="Instagram" class="w-full h-full object-contain" referrerPolicy="no-referrer">
-                </a>
-            </div>
-
-            <div class="flex flex-col gap-4 text-[9px] uppercase tracking-widest text-on-surface-variant/40">
-                <div class="flex items-center justify-center gap-2">
-                    <i data-lucide="alert-triangle" size="10" class="text-primary"></i> Não somos afiliados ao governo dos Estados Unidos.
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center md:text-left">
+                <!-- Col 1: Brand -->
+                <div class="space-y-8">
+                    <div>
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto mx-auto md:mx-0 opacity-90 mb-4" loading="lazy">
+                        <div class="text-primary font-display font-black text-2xl tracking-tighter italic">KNJ TUR</div>
+                    </div>
+                    <p class="text-xs text-on-surface-variant uppercase tracking-widest leading-loose max-w-[280px] mx-auto md:mx-0">
+                        Consultoria estratégica para vistos americanos e planejamento de viagens internacionais com foco em aprovação e economia.
+                    </p>
+                    <div class="flex justify-center md:justify-start gap-6">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                            <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
+                        </a>
+                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all">
+                            <i data-lucide="message-circle" size="18"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="flex items-center justify-center gap-1">
-                    Site Desenvolvido por <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold">Orvalia Studio</a>
+
+                <!-- Col 2: Info -->
+                <div class="space-y-8">
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Navegação</h4>
+                    <nav class="flex flex-col gap-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+                        <a href="../index.html" class="hover:text-primary transition-colors">Início</a>
+                        <a href="../visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+                        <a href="./" class="hover:text-primary transition-colors text-primary">Blog KNJ</a>
+                        <a href="../viagens/" class="hover:text-primary transition-colors">Viagens & Pacotes</a>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Contato -->
+                <div class="space-y-8">
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Contato</h4>
+                    <div class="flex flex-col gap-6 text-[10px] text-on-surface-variant uppercase tracking-widest font-medium">
+                        <div class="flex items-center gap-3 justify-center md:justify-start">
+                            <i data-lucide="map-pin" class="text-primary" size="14"></i>
+                            Jardim Dom Bosco, Indaiatuba, SP
+                        </div>
+                        <a href="mailto:kenji@knjtur.com" class="flex items-center gap-3 justify-center md:justify-start hover:text-primary transition-colors">
+                            <i data-lucide="mail" class="text-primary" size="14"></i>
+                            kenji@knjtur.com
+                        </a>
+                        <a href="https://wa.me/5511994085822" class="flex items-center gap-3 justify-center md:justify-start hover:text-primary transition-colors">
+                            <i data-lucide="phone" class="text-primary" size="14"></i>
+                            (11) 99408-5822
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 4: Bio/Legal -->
+                <div class="space-y-8">
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Segurança</h4>
+                    <div class="p-6 rounded-2xl bg-surface-variant border border-white/5 space-y-4">
+                        <div class="flex items-center gap-2 text-[9px] uppercase tracking-widest text-primary font-bold">
+                            <i data-lucide="shield-check" size="14"></i> Consultoria Auditada
+                        </div>
+                        <p class="text-[9px] text-on-surface-variant leading-relaxed uppercase tracking-widest">
+                            Análise técnica rigorosa baseada nas normas consulares vigentes para maximizar sua chance de sucesso.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="text-[9px] uppercase tracking-[0.4em] text-on-surface-variant/30 font-bold leading-relaxed">
+                            <i data-lucide="alert-triangle" size="10" class="inline text-primary/50 mr-1"></i> Não somos afiliados ao Governo dos EUA.
+                        </p>
+                        <div class="flex justify-center md:justify-start gap-4 text-[9px] font-bold uppercase tracking-widest text-on-surface-variant/50">
+                            <a href="../politica-de-privacidade/" class="hover:text-primary">Privacidade</a>
+                            <a href="../termos-de-uso/" class="hover:text-primary">Termos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-[10px] text-on-surface-variant/40 uppercase tracking-widest font-medium">
+                    @2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS
+                </div>
+                <div class="text-[8px] uppercase tracking-widest text-on-surface-variant/20">
+                    SITE DESENVOLVIDO POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>
                 </div>
             </div>
         </div>
