@@ -1,0 +1,40 @@
+# Robots.txt para KNJ TUR - Otimizado para SEO e IA (AIO)
+# Domínio: https://www.knjtur.com
+
+User-agent: *
+Allow: /
+
+# Bloqueio de arquivos técnicos e de configuração
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /metadata.json
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /.env.example
+Disallow: /.gitignore
+Disallow: /.gitattributes
+Disallow: /README.md
+
+# Permissões Explícitas para Agentes de IA (AIO - AI Optimization)
+# Garantindo que o conteúdo seja lido e recomendado por assistentes de IA
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Caminho do Sitemap para Mecanismos de Busca
+Sitemap: https://www.knjtur.com/sitemap.xml

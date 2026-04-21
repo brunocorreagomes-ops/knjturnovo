@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visto Americano com Alta Chance de Aprovação | KNJ TUR</title>
-    <meta name="description" content="Consultoria especializada em visto americano para turismo, estudo e negócios. Aumente suas chances de aprovação com suporte completo e planejamento de viagem internacional.">
+    <title>Visto Americano em Indaiatuba e Campinas | Consultoria KNJ TUR</title>
+    <meta name="description" content="Especialista em Visto Americano em Indaiatuba, Campinas e todo interior de SP. Consultoria para 1º visto, renovação e agência de viagens completa com passagens, hotéis e aluguel de carros.">
     
     <!-- Base Styles -->
     <link rel="stylesheet" href="styles.css">
@@ -32,12 +32,61 @@
             }
         }
     </script>
+
+    <!-- Schema.org JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "KNJ TUR - Consultoria de Vistos e Viagens",
+      "image": "https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jardim Dom Bosco",
+        "addressLocality": "Indaiatuba",
+        "addressRegion": "SP",
+        "postalCode": "13333-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.0894,
+        "longitude": -47.2181
+      },
+      "url": "https://knjtur.com",
+      "telephone": "+5511994085822",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Indaiatuba" },
+        { "@type": "City", "name": "Campinas" },
+        { "@type": "City", "name": "Salto" },
+        { "@type": "City", "name": "Itu" },
+        { "@type": "City", "name": "Sorocaba" },
+        { "@type": "City", "name": "Jundiaí" },
+        { "@type": "City", "name": "Americana" }
+      ],
+      "description": "Consultoria especializada em visto americano, renovação de visto e agência de viagens completa atendendo Indaiatuba, Campinas e região."
+    }
+    </script>
 </head>
-<body class="bg-surface text-on-surface antialiased selection:bg-primary/30">
+<body class="bg-surface text-on-surface antialiased selection:bg-primary/30 text-base">
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-lg border-b border-white/5 h-20 flex items-center transition-all duration-300">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-4 group">
+            <a href="index.html" class="flex items-center gap-4 group" title="KNJ TUR - Home">
                 <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105">
                 <div class="flex flex-col">
                     <span class="text-white font-display font-black text-lg tracking-tighter leading-none italic">KNJ TUR</span>
@@ -47,21 +96,22 @@
             
             <div class="flex items-center gap-8">
                 <nav class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-widest text-on-surface-variant">
-                    <a href="index.html" class="hover:text-primary transition-colors text-primary">Home</a>
+                    <a href="index.html" class="text-primary border-b-2 border-primary pb-1 transition-colors">Home</a>
+                    <a href="sobre-nos/" class="hover:text-primary transition-colors">Sobre Nós</a>
                     <a href="visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
                     <a href="blog/" class="hover:text-primary transition-colors">Blog</a>
-                    <a href="viagens/" class="hover:text-primary transition-colors border-b-2 border-primary pb-1">Viagens</a>
-                    <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="bg-[#25D366] hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full transition-all flex items-center gap-2">
+                    <a href="viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                    <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="bg-[#25D366] hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full transition-all flex items-center gap-2">
                         <i data-lucide="message-circle" size="18"></i> WhatsApp
                     </a>
                 </nav>
 
                 <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors flex items-center">
-                    <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-6 h-6 object-contain" referrerPolicy="no-referrer">
+                    <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram KNJ TUR" class="w-6 h-6 object-contain" referrerPolicy="no-referrer">
                 </a>
 
                 <!-- Menu Mobile Btn -->
-                <button id="menu-btn" class="md:hidden text-white p-2">
+                <button id="menu-btn" class="md:hidden text-white p-2" aria-label="Abrir Menu">
                     <i data-lucide="menu"></i>
                 </button>
             </div>
@@ -70,13 +120,14 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 z-40 bg-surface flex flex-col items-center justify-center gap-8 text-2xl font-black uppercase italic tracking-tighter">
-        <a href="index.html" class="text-primary">Home</a>
-        <a href="visto-americano/" class="hover:text-primary">Guia Visto</a>
-        <a href="blog/" class="hover:text-primary">Blog</a>
-        <a href="viagens/" class="hover:text-primary">Viagens</a>
-        <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" class="text-primary border-2 border-primary px-8 py-4 rounded-full">WhatsApp</a>
-        <a href="https://www.instagram.com/knjtur" target="_blank" class="flex items-center gap-2 text-white hover:text-primary">
-            <i data-lucide="instagram" size="32"></i> Instagram
+        <a href="index.html" class="text-primary border-b-2 border-primary">Home</a>
+        <a href="sobre-nos/" class="hover:text-primary transition-colors">Sobre Nós</a>
+        <a href="visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+        <a href="blog/" class="hover:text-primary transition-colors">Blog</a>
+        <a href="viagens/" class="hover:text-primary transition-colors">Viagens</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="text-whatsapp border-2 border-whatsapp px-8 py-4 rounded-full">WhatsApp</a>
+        <a href="https://www.instagram.com/knjtur" target="_blank" class="flex items-center gap-2 text-white hover:text-primary mt-4">
+            <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-8 h-8 object-contain" referrerPolicy="no-referrer"> Instagram
         </a>
     </div>
 
@@ -85,7 +136,7 @@
         <section class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden bg-surface">
             <!-- Hero Image Background -->
             <div class="absolute inset-0 z-0">
-                <img src="https://i.ibb.co/yFDvT9MN/knj-hero.webp" alt="Visto Americano Hero" class="w-full h-full object-cover opacity-40 grayscale-0" referrerPolicy="no-referrer">
+                <img src="https://i.ibb.co/yFDvT9MN/knj-hero.webp" alt="Especialista em Visto Americano em Indaiatuba e região de Campinas" class="w-full h-full object-cover opacity-40 grayscale-0" referrerPolicy="no-referrer">
                 <div class="absolute inset-0 bg-gradient-to-b from-surface via-surface/40 to-surface"></div>
                 <div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-surface"></div>
             </div>
@@ -97,170 +148,147 @@
                 <div class="max-w-4xl mx-auto">
                     <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-8">
                         <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-                        CONSULTORIA ESTRATÉGICA
+                        CONSULTORIA EM INDAIATUBA E CAMPINAS
                     </div>
                     <h1 class="reveal reveal-up text-4xl md:text-6xl lg:text-7xl font-display font-black leading-[1.1] text-white mb-8 tracking-tight">
-                        Visto Americano com <br>
-                        <span class="text-primary italic">Alta Chance</span> de Aprovação
+                        Visto Americano em <span class="text-primary italic">Indaiatuba</span>: Estratégia e Sucesso
                     </h1>
                     <p class="reveal reveal-up reveal-delay-1 text-lg md:text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">
-                        Consultoria estratégica para visto americano com suporte completo — do processo até sua viagem organizada com segurança, economia e zero erros.
+                        A melhor consultoria para <strong>Visto Americano no interior de São Paulo</strong>. Suporte completo para Indaiatuba, Campinas e região metropolitana — do formulário à sua viagem dos sonhos.
                     </p>
                     <div class="reveal reveal-up reveal-delay-2 flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="https://wa.me/5511994085822?text=Olá,%20gostaria%20de%20falar%20com%20um%20especialista%20em%20visto%20americano" class="bg-[#25D366] hover:bg-opacity-90 text-white px-10 py-5 rounded-full text-lg font-bold flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-2xl shadow-[#25D366]/20">
-                            Falar com Especialista em Visto <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            Falar com Especialista Agendado em Campinas <i data-lucide="message-circle" class="w-5 h-5"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- PROCESSO -->
-        <section class="py-24 bg-surface relative">
-            <div class="container mx-auto px-6 max-w-5xl">
-                <div class="text-center mb-16 reveal reveal-up">
-                    <h2 class="text-3xl md:text-5xl font-display font-black text-white mb-6 uppercase italic tracking-tighter">Como funciona o <span class="text-primary">processo</span></h2>
-                    <p class="text-on-surface-variant text-lg">Nosso método exclusivo para garantir sua tranquilidade.</p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div class="space-y-6">
-                        <div class="reveal reveal-left reveal-delay-1 flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
-                            <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary shrink-0">
-                                <i data-lucide="check" size="20"></i>
-                            </div>
-                            <span class="text-lg font-bold text-white uppercase tracking-tight">Análise estratégica do perfil</span>
-                        </div>
-                        <div class="reveal reveal-left reveal-delay-2 flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
-                            <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary shrink-0">
-                                <i data-lucide="check" size="20"></i>
-                            </div>
-                            <span class="text-lg font-bold text-white uppercase tracking-tight">Preenchimento do formulário DS-160</span>
-                        </div>
-                    </div>
-                    <div class="space-y-6">
-                        <div class="reveal reveal-right reveal-delay-1 flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
-                            <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary shrink-0">
-                                <i data-lucide="check" size="20"></i>
-                            </div>
-                            <span class="text-lg font-bold text-white uppercase tracking-tight">Agendamento no consulado</span>
-                        </div>
-                        <div class="reveal reveal-right reveal-delay-2 flex items-center gap-4 p-6 rounded-3xl bg-surface-variant border border-white/5">
-                            <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary shrink-0">
-                                <i data-lucide="check" size="20"></i>
-                            </div>
-                            <span class="text-lg font-bold text-white uppercase tracking-tight">Preparação completa para entrevista</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ERROS -->
-        <section class="py-32 bg-surface-variant relative overflow-hidden">
+        <!-- SERVIÇOS COMPLETOS -->
+        <section class="py-24 bg-surface relative" id="servicos">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-20 reveal reveal-up">
-                    <div class="text-primary text-[10px] font-bold uppercase tracking-[0.4em] mb-4">ALERTA</div>
-                    <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-6 uppercase italic tracking-tighter">O que <span class="text-primary">reprova</span> no visto</h2>
-                    <p class="text-on-surface-variant text-lg">Evite os erros fatais que barram milhares de brasileiros todos os anos.</p>
+                <div class="text-center mb-16 reveal reveal-up">
+                    <h2 class="text-3xl md:text-5xl font-display font-black text-white mb-6 uppercase italic tracking-tighter">Soluções Completas em <span class="text-primary">Viagens</span></h2>
+                    <p class="text-on-surface-variant text-lg">De Indaiatuba para o mundo, com segurança e expertise local.</p>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <div class="reveal reveal-up reveal-delay-1 group p-10 rounded-[2.5rem] bg-surface border border-white/5 hover:border-primary/30 transition-all">
-                        <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-                            <i data-lucide="file-warning" class="text-primary" size="24"></i>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Servico 1: Vistos -->
+                    <div class="reveal reveal-up p-8 rounded-[2.5rem] bg-surface-variant border border-white/5 hover:border-primary/40 transition-all">
+                        <div class="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="file-check" class="text-primary" size="24"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 tracking-tight">Erros no DS-160</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Dados inconsistentes ou mal formulados podem causar negativa imediata e permanente.</p>
+                        <h3 class="text-2xl font-bold text-white mb-4">Primeiro Visto e Renovação</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Análise de perfil, preenchimento DS-160 e agendamentos. Somos a agência de vistos referência próximo a <strong>Campinas</strong>.</p>
                     </div>
 
-                    <div class="reveal reveal-up reveal-delay-2 group p-10 rounded-[2.5rem] bg-surface border border-white/5 hover:border-primary/30 transition-all">
-                        <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-                            <i data-lucide="user-x" class="text-primary" size="24"></i>
+                    <!-- Servico 2: Passagens -->
+                    <div class="reveal reveal-up reveal-delay-1 p-8 rounded-[2.5rem] bg-surface-variant border border-white/5 hover:border-primary/40 transition-all">
+                        <div class="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="plane" class="text-primary" size="24"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 tracking-tight">Despreparo na Entrevista</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Falta de confiança e respostas vagas geram desconfiança imediata no oficial consular.</p>
+                        <h3 class="text-2xl font-bold text-white mb-4">Passagens Aéreas</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Emissão de passagens internacionais com tarifas exclusivas para famílias de <strong>Indaiatuba</strong>.</p>
                     </div>
 
-                    <div class="reveal reveal-up reveal-delay-3 group p-10 rounded-[2.5rem] bg-surface border border-white/5 hover:border-primary/30 transition-all">
-                        <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-                            <i data-lucide="anchor" class="text-primary" size="24"></i>
+                    <!-- Servico 3: Hoteis -->
+                    <div class="reveal reveal-up reveal-delay-2 p-8 rounded-[2.5rem] bg-surface-variant border border-white/5 hover:border-primary/40 transition-all">
+                        <div class="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="hotel" class="text-primary" size="24"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 tracking-tight">Falta de Vínculos</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Não comprovar ligação sólida com o Brasil é o motivo mais comum de reprovação.</p>
+                        <h3 class="text-2xl font-bold text-white mb-4">Hospedagem</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Reserva de hotéis e resorts nos EUA e Europa com suporte especializado KNJ TUR.</p>
+                    </div>
+
+                    <!-- Servico 4: Aluguel de Carro -->
+                    <div class="reveal reveal-up p-8 rounded-[2.5rem] bg-surface-variant border border-white/5 hover:border-primary/40 transition-all">
+                        <div class="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="car" class="text-primary" size="24"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Aluguel de Carros</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Locação de veículos nos EUA com seguros completos e suporte em português.</p>
+                    </div>
+
+                    <!-- Servico 5: Traslados -->
+                    <div class="reveal reveal-up reveal-delay-1 p-8 rounded-[2.5rem] bg-surface-variant border border-white/5 hover:border-primary/40 transition-all">
+                        <div class="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="bus" class="text-primary" size="24"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Traslados e Transfers</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Logística completa de chegada e saída para garantir o conforto da sua viagem internacional.</p>
+                    </div>
+
+                    <!-- Servico 6: Roteiros -->
+                    <div class="reveal reveal-up reveal-delay-2 p-8 rounded-[2.5rem] bg-surface-variant border border-white/5 hover:border-primary/40 transition-all">
+                        <div class="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="map" class="text-primary" size="24"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Roteiros Personalizados</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Planejamento dia a dia sugerido por quem conhece os melhores destinos dos Estados Unidos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- UPSELL VIAGEM -->
+        <!-- DEPOIMENTOS LOCAIS -->
+        <section class="py-24 bg-surface-variant">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal reveal-up">
+                    <h2 class="text-3xl md:text-5xl font-display font-black text-white mb-6 uppercase italic tracking-tighter">O que dizem os <span class="text-primary">Estatísticos</span> do Visto</h2>
+                    <p class="text-on-surface-variant text-lg">Clientes satisfeitos atendidos em <strong>Indaiatuba</strong>, <strong>Campinas</strong> e região.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="reveal reveal-up p-8 rounded-3xl bg-surface border border-white/5 italic">
+                        "Tentei sozinho e tive o visto negado. A KNJ TUR de Indaiatuba refez meu processo e fui aprovado com segurança. Recomendo muito!"
+                        <div class="mt-6 not-italic">
+                            <div class="font-bold text-white">Ricardo Silva</div>
+                            <div class="text-xs text-primary font-bold uppercase tracking-widest">Indaiatuba, SP</div>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up reveal-delay-1 p-8 rounded-3xl bg-surface border border-white/5 italic">
+                        "Encontrei a KNJ em Campinas e eles cuidaram de tudo: do visto às passagens da minha lua de mel. Serviço impecável e humanizado."
+                        <div class="mt-6 not-italic">
+                            <div class="font-bold text-white">Juliana M.</div>
+                            <div class="text-xs text-primary font-bold uppercase tracking-widest">Campinas, SP</div>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up reveal-delay-2 p-8 rounded-3xl bg-surface border border-white/5 italic">
+                        "Consultoria séria e estratégica. Moramos em Sorocaba e valeu muito a pena o suporte remoto para a renovação da minha família."
+                        <div class="mt-6 not-italic">
+                            <div class="font-bold text-white">Marcos Oliveira</div>
+                            <div class="text-xs text-primary font-bold uppercase tracking-widest">Sorocaba, SP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ HIPERLOCAL -->
         <section class="py-32 bg-surface">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="reveal reveal-up text-3xl md:text-6xl font-display font-black text-white mb-6 uppercase italic tracking-tighter">Seu visto aprovado é <span class="text-primary">só o começo</span></h2>
-                <p class="reveal reveal-up reveal-delay-1 text-on-surface-variant max-w-2xl mx-auto mb-16 text-lg">
-                    A maioria das pessoas consegue o visto, mas erra no planejamento. Nós cuidamos de tudo para você viajar com segurança e economia real.
-                </p>
-
-                <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto text-left mb-16">
-                    <div class="space-y-4 reveal reveal-left reveal-delay-2">
-                        <div class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <i data-lucide="plane" class="text-primary" size="18"></i> Passagens com melhor custo-benefício
-                        </div>
-                        <div class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <i data-lucide="hotel" class="text-primary" size="18"></i> Hospedagem estratégica
-                        </div>
-                        <div class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <i data-lucide="map" class="text-primary" size="18"></i> Roteiro otimizado
-                        </div>
-                    </div>
-                    <div class="space-y-4 reveal reveal-right reveal-delay-2">
-                        <div class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <i data-lucide="calendar" class="text-primary" size="18"></i> Planejamento completo
-                        </div>
-                        <div class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <i data-lucide="wallet" class="text-primary" size="18"></i> Economia de tempo e dinheiro
-                        </div>
-                        <div class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <i data-lucide="life-buoy" class="text-primary" size="18"></i> Suporte total
-                        </div>
-                    </div>
-                </div>
-
-                <a href="https://wa.me/5511994085822?text=Olá,%20já%20tenho%20visto%20e%20preciso%20de%20ajuda%20com%20meu%20planejamento%20de%20viagem" class="reveal reveal-up reveal-delay-3 bg-primary hover:bg-primary-dark text-white px-10 py-5 rounded-full text-lg font-bold transition-all transform hover:scale-105 inline-flex items-center gap-3">
-                    Quero Ajuda Completa <i data-lucide="sparkles" size="20"></i>
-                </a>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="py-32 bg-surface-variant">
             <div class="container mx-auto px-6 max-w-4xl">
-                <h2 class="text-4xl md:text-5xl font-display font-black text-center text-white mb-16 uppercase italic tracking-tighter">Perguntas <span class="text-primary">Frequentes</span></h2>
+                <h2 class="text-4xl md:text-5xl font-display font-black text-center text-white mb-16 uppercase italic tracking-tighter">FAQ: <span class="text-primary">Dúvidas Frequentes</span></h2>
                 
                 <div class="space-y-12">
-                    <div class="reveal reveal-up reveal-delay-1 p-8 rounded-[2rem] bg-surface border border-white/5">
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Como tirar visto americano?</h3>
-                        <p class="text-on-surface-variant leading-relaxed">O processo envolve preenchimento do formulário DS-160, pagamento da MRV, agendamento de biometria/entrevista e a entrevista final. Nossa consultoria guia você em todas essas etapas, eliminando dúvidas e erros.</p>
+                    <div class="reveal reveal-up p-8 rounded-[2rem] bg-surface-variant border border-white/5">
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Tem consultoria de visto americano em Indaiatuba?</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Sim! A <strong>KNJ TUR</strong> é sediada em Indaiatuba, SP, no Jardim Dom Bosco. Oferecemos atendimento presencial com hora marcada e suporte completo para toda a região, evitando que você precise ir a São Paulo apenas para tirar dúvidas.</p>
                     </div>
 
-                    <div class="reveal reveal-up reveal-delay-2 p-8 rounded-[2rem] bg-surface border border-white/5">
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-4">O que pode reprovar o visto?</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Inconsistência de dados entre o formulário e a fala, falta de vínculos comprovados com o Brasil e insegurança durante a entrevista são os principais fatores de negativa.</p>
+                    <div class="reveal reveal-up p-8 rounded-[2rem] bg-surface-variant border border-white/5">
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Atendem clientes de Campinas e região?</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Atendemos regularmente toda a <strong>Região Metropolitana de Campinas (RMC)</strong>, incluindo Salto, Itu, Sorocaba e Jundiaí. Nosso processo é otimizado para que boa parte da consultoria possa ser feita remotamente para sua comodidade.</p>
                     </div>
 
-                    <div class="reveal reveal-up reveal-delay-3 p-8 rounded-[2rem] bg-surface border border-white/5">
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Quanto custa tirar visto?</h3>
-                        <p class="text-on-surface-variant leading-relaxed">O custo total inclui a taxa consular obrigatória (MRV) e o investimento em nossa consultoria especializada. Auxiliamos você a investir da maneira correta, evitando retrabalho e gastos com novas taxas por reprovação.</p>
+                    <div class="reveal reveal-up p-8 rounded-[2rem] bg-surface-variant border border-white/5">
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Qual consulado atende quem mora no interior de SP?</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Quem reside no interior de São Paulo deve realizar a entrevista no <strong>Consulado Geral dos EUA em São Paulo</strong>. Nós cuidamos do agendamento tanto no CASV quanto no Consulado, facilitando a logística da sua viagem à capital.</p>
                     </div>
 
-                    <div class="reveal reveal-up reveal-delay-4 p-8 rounded-[2rem] bg-surface border border-white/5">
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Posso solicitar visto para familiar?</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Sim, é possível solicitar o visto para familiares (cônjuges e filhos). Embora cada um precise de seu próprio formulário e taxa, a entrevista pode ser agendada em conjunto, o que facilita a análise dos vínculos familiares e financeiros do grupo.</p>
-                    </div>
-
-                    <div class="reveal reveal-up reveal-delay-5 p-8 rounded-[2rem] bg-surface border border-white/5">
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Qual a validade do visto americano?</h3>
-                        <p class="text-on-surface-variant leading-relaxed">Para a categoria de turismo e negócios (B1/B2), o visto para brasileiros costuma ter validade de 10 anos. No entanto, o tempo de permanência autorizado em cada entrada é decidido pelo oficial de imigração no aeroporto, sendo geralmente de 6 meses por viagem.</p>
+                    <div class="reveal reveal-up p-8 rounded-[2rem] bg-surface-variant border border-white/5">
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-4">A KNJ TUR também é agência de viagens?</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Exatamente. Somos uma agência completa. Além de aprovarmos seu visto, emitimos passagens, reservamos hotéis e garantimos aluguel de carros e seguros viagem, tudo em um só lugar com atendimento personalizado de Indaiatuba.</p>
                     </div>
                 </div>
             </div>
@@ -269,9 +297,9 @@
         <!-- CTA FINAL -->
         <section class="py-32 bg-surface text-center px-6">
             <div class="container mx-auto reveal reveal-up">
-                <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-10 leading-tight uppercase italic tracking-tighter">Pronto para tirar seu visto <br> com <span class="text-primary">segurança</span>?</h2>
-                <a href="https://wa.me/5511994085822" class="bg-[#25D366] hover:bg-opacity-90 text-white px-12 py-6 rounded-full text-xl font-bold transition-all transform hover:scale-105 inline-flex items-center gap-3 shadow-2xl shadow-[#25D366]/20">
-                    Falar com Especialista Agora <i data-lucide="message-circle" size="24"></i>
+                <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-10 leading-tight uppercase italic tracking-tighter italic">O melhor atendimento do <span class="text-primary italic">interior de SP</span> para seu visto.</h2>
+                <a href="https://wa.me/5511994085822" class="bg-[#25D366] hover:bg-opacity-90 text-white px-12 py-6 rounded-full text-xl font-bold transition-all transform hover:scale-105 inline-flex items-center gap-3 shadow-2xl shadow-[#25D366]/20" title="Falar via WhatsApp com Especialista">
+                    Falar com Especialista de Indaiatuba Agora <i data-lucide="message-circle" size="24"></i>
                 </a>
             </div>
         </section>
@@ -284,17 +312,17 @@
                 <!-- Col 1: Brand -->
                 <div class="space-y-8">
                     <div>
-                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto mx-auto md:mx-0 opacity-90 mb-4" loading="lazy">
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR - Vistos em Indaiatuba" class="h-12 w-auto mx-auto md:mx-0 opacity-90 mb-4" loading="lazy">
                         <div class="text-primary font-display font-black text-2xl tracking-tighter italic">KNJ TUR</div>
                     </div>
                     <p class="text-xs text-on-surface-variant uppercase tracking-widest leading-loose max-w-[280px] mx-auto md:mx-0">
-                        Consultoria estratégica para vistos americanos e planejamento de viagens internacionais com foco em aprovação e economia.
+                        Consultoria estratégica de vistos em <strong>Indaiatuba</strong> e agência de viagens internacional para todo o interior paulista.
                     </p>
                     <div class="flex justify-center md:justify-start gap-6">
-                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-                            <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all" aria-label="Siga-nos no Instagram">
+                            <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram Logo" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
                         </a>
-                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all">
+                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all" aria-label="Chame no WhatsApp">
                             <i data-lucide="message-circle" size="18"></i>
                         </a>
                     </div>
@@ -302,18 +330,19 @@
 
                 <!-- Col 2: Info -->
                 <div class="space-y-8">
-                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Navegação</h4>
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Serviços Locais</h4>
                     <nav class="flex flex-col gap-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant">
-                        <a href="index.html" class="hover:text-primary transition-colors">Início</a>
-                        <a href="visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
-                        <a href="blog/" class="hover:text-primary transition-colors">Blog KNJ</a>
-                        <a href="viagens/" class="hover:text-primary transition-colors text-primary">Viagens & Pacotes</a>
+                        <a href="sobre-nos/" class="hover:text-primary transition-colors">Sobre a KNJ TUR</a>
+                        <a href="visto-americano/" class="hover:text-primary transition-colors">Visto Americano Indaiatuba</a>
+                        <a href="visto-americano/" class="hover:text-primary transition-colors">Visto Americano Campinas</a>
+                        <a href="viagens/" class="hover:text-primary transition-colors">Agência de Viagens Indaiatuba</a>
+                        <a href="blog/" class="hover:text-primary transition-colors">Dicas de Viagem</a>
                     </nav>
                 </div>
 
                 <!-- Col 3: Contato -->
                 <div class="space-y-8">
-                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Contato</h4>
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Localização</h4>
                     <div class="flex flex-col gap-6 text-[10px] text-on-surface-variant uppercase tracking-widest font-medium">
                         <div class="flex items-center gap-3 justify-center md:justify-start">
                             <i data-lucide="map-pin" class="text-primary" size="14"></i>
@@ -335,10 +364,10 @@
                     <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Segurança</h4>
                     <div class="p-6 rounded-2xl bg-surface-variant border border-white/5 space-y-4">
                         <div class="flex items-center gap-2 text-[9px] uppercase tracking-widest text-primary font-bold">
-                            <i data-lucide="shield-check" size="14"></i> Consultoria Auditada
+                            <i data-lucide="shield-check" size="14"></i> Especialista Regional
                         </div>
                         <p class="text-[9px] text-on-surface-variant leading-relaxed uppercase tracking-widest">
-                            Análise técnica rigorosa baseada nas normas consulares vigentes para maximizar sua chance de sucesso.
+                            Referência técnica em <strong>Indaiatuba e Campinas</strong> para processos consulares americanos.
                         </p>
                     </div>
                     <div class="flex flex-col gap-2">
@@ -358,18 +387,18 @@
                     @2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS
                 </div>
                 <div class="text-[8px] uppercase tracking-widest text-on-surface-variant/20">
-                    SITE DESENVOLVIDO POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>
+                    SITE OTIMIZADO PARA IA POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Pill -->
-    <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="fixed bottom-8 left-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float flex items-center justify-center">
+    <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="fixed bottom-8 left-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float flex items-center justify-center" aria-label="Chamar Especialista de Indaiatuba">
         <i data-lucide="message-circle" size="32"></i>
     </a>
 
-    <button id="back-to-top" class="fixed bottom-8 right-8 z-50 bg-primary text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 opacity-0 invisible translate-y-10 flex items-center justify-center">
+    <button id="back-to-top" class="fixed bottom-8 right-8 z-50 bg-primary text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 opacity-0 invisible translate-y-10 flex items-center justify-center" aria-label="Voltar ao topo">
         <i data-lucide="arrow-up" size="32"></i>
     </button>
 

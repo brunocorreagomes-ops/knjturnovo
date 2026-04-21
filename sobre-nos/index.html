@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | KNJ TUR - Consultoria de Vistos em Indaiatuba e Campinas</title>
+    <meta name="description" content="Conheça a história da KNJ TUR, sua agência de vistos e viagens baseada em Indaiatuba. Especialistas em visto americano e roteiros personalizados para o interior de SP.">
+    
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF8C00',
+                        'primary-dark': '#CC7000',
+                        accent: '#FFD700',
+                        surface: '#0A0A0A',
+                        'surface-variant': '#141414',
+                        'on-surface': '#FFFFFF',
+                        'on-surface-variant': '#A0A0A0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org JSON-LD Organization & Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KNJ TUR",
+      "alternateName": "KNJ Consultoria de Vistos e Viagens",
+      "url": "https://knjtur.com",
+      "logo": "https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-11-99408-5822",
+        "contactType": "customer service",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      },
+      "sameAs": [
+        "https://www.instagram.com/knjtur"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jardim Dom Bosco",
+        "addressLocality": "Indaiatuba",
+        "addressRegion": "SP",
+        "postalCode": "13333-000",
+        "addressCountry": "BR"
+      },
+      "description": "Especialista em consultoria estratégica de visto americano e agência de viagens personalizada em Indaiatuba e região de Campinas."
+    }
+    </script>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary/30">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-lg border-b border-white/5 h-20 flex items-center transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-4 group">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105">
+                <div class="flex flex-col">
+                    <span class="text-white font-display font-black text-lg tracking-tighter leading-none italic">KNJ TUR</span>
+                    <span class="hidden sm:block text-[9px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">Consultoria de Vistos e Viagens</span>
+                </div>
+            </a>
+            
+            <div class="flex items-center gap-8">
+                <nav class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-widest text-on-surface-variant">
+                    <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="./" class="text-primary border-b-2 border-primary pb-1 transition-colors">Sobre Nós</a>
+                    <a href="../visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+                    <a href="../blog/" class="hover:text-primary transition-colors">Blog</a>
+                    <a href="../viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                    <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="bg-[#25D366] hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full transition-all flex items-center gap-2">
+                        <i data-lucide="message-circle" size="18"></i> WhatsApp
+                    </a>
+                </nav>
+
+                <a href="https://www.instagram.com/knjtur" target="_blank" class="text-white hover:text-primary transition-colors flex items-center">
+                    <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-6 h-6 object-contain" referrerPolicy="no-referrer">
+                </a>
+
+                <button id="menu-btn" class="md:hidden text-white p-2">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-surface flex flex-col items-center justify-center gap-8 text-2xl font-black uppercase italic tracking-tighter">
+        <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+        <a href="./" class="text-primary border-b-2 border-primary">Sobre Nós</a>
+        <a href="../visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+        <a href="../blog/" class="hover:text-primary transition-colors">Blog</a>
+        <a href="../viagens/" class="hover:text-primary transition-colors">Viagens</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="text-whatsapp border-2 border-whatsapp px-8 py-4 rounded-full">WhatsApp</a>
+        <a href="https://www.instagram.com/knjtur" target="_blank" class="flex items-center gap-2 text-white hover:text-primary mt-4">
+            <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-8 h-8 object-contain" referrerPolicy="no-referrer"> Instagram
+        </a>
+    </div>
+
+    <main class="pt-32">
+        <!-- Hero Section -->
+        <section class="py-20 relative overflow-hidden bg-surface">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[100px]"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-[100px]"></div>
+            </div>
+            
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-[0.2em] mb-8">
+                    NOSSA HISTÓRIA
+                </div>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black leading-tight text-white mb-8 tracking-tighter uppercase italic">
+                    Paixão por Aproximar <br><span class="text-primary">Destinos e Pessoas</span>
+                </h1>
+                <p class="text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+                    A KNJ TUR nasceu com um propósito claro: transformar a burocracia consular em um processo estratégico e humano para os moradores de Indaiatuba e região.
+                </p>
+            </div>
+        </section>
+
+        <!-- Story & Location -->
+        <section class="py-24 bg-surface-variant">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-8">
+                        <h2 class="text-3xl md:text-4xl font-display font-black text-white uppercase italic tracking-tight">De Indaiatuba <span class="text-primary">Para o Mundo</span></h2>
+                        <div class="space-y-6 text-on-surface-variant leading-relaxed">
+                            <p>
+                                Sediada no coração de <strong>Indaiatuba, SP</strong>, no Jardim Dom Bosco, a KNJ TUR entende o valor de um atendimento próximo. Sabemos que tirar o visto americano não é apenas preencher formulários, é planejar o acesso a sonhos, negócios e reencontros familiares.
+                            </p>
+                            <p>
+                                Nossa jornada começou ao identificarmos que muitos viajantes do interior de São Paulo sentiam falta de uma consultoria que falasse a sua língua, com transparência e estratégia, sem as complicações e o distanciamento das grandes capitais.
+                            </p>
+                            <div class="p-6 rounded-2xl bg-surface border border-white/5 flex items-start gap-4">
+                                <i data-lucide="map-pin" class="text-primary shrink-0" size="24"></i>
+                                <div>
+                                    <h4 class="text-white font-bold mb-1">Presença Regional</h4>
+                                    <p class="text-sm">Atendemos presencialmente com hora marcada em Indaiatuba e oferecemos suporte remoto premium para toda a Região Metropolitana de Campinas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="aspect-square rounded-[3rem] overflow-hidden border border-white/10 transition-all duration-700">
+                            <img src="https://i.ibb.co/k2rZHqBx/kenji-site-red.webp" alt="Kenji - Fundador da KNJ TUR" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-8 -left-8 bg-primary p-8 rounded-3xl shadow-2xl hidden md:block">
+                            <div class="text-4xl font-black text-white leading-none mb-2">+500</div>
+                            <div class="text-[10px] text-white/80 font-bold uppercase tracking-widest leading-none">Vistos Analisados</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Area Served & Differentiators -->
+        <section class="py-24 bg-surface">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-display font-black text-white uppercase italic tracking-tighter">Área de Atuação e <span class="text-primary">Diferenciais</span></h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-10 rounded-[2.5rem] bg-surface-variant border border-white/5 hover:border-primary/20 transition-all">
+                        <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="navigation" class="text-primary" size="24"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4 italic">Região Metropolitana de Campinas</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            Somos referência para clientes de <strong>Indaiatuba, Campinas, Salto, Itu, Sorocaba, Jundiaí e Americana</strong>. Atendimento que entende a logística e os desafios do interior paulista.
+                        </p>
+                    </div>
+
+                    <div class="p-10 rounded-[2.5rem] bg-surface-variant border border-white/5 hover:border-primary/20 transition-all">
+                        <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="shield-check" class="text-primary" size="24"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4 italic">Consultoria Estratégica</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            Não fazemos apenas o "meio de campo". Analisamos o seu perfil de forma técnica para identificar pontos de melhoria, garantindo a maior chance de aprovação possível no Consulado.
+                        </p>
+                    </div>
+
+                    <div class="p-10 rounded-[2.5rem] bg-surface-variant border border-white/5 hover:border-primary/20 transition-all">
+                        <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="award" class="text-primary" size="24"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4 italic">Atendimento Humanizado</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            Na KNJ TUR você não é um número de protocolo. Você fala diretamente com quem cuidará do seu caso, com transparência e suporte real até a entrega do seu passaporte.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agency Section -->
+        <section class="py-24 bg-surface-variant relative overflow-hidden">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-5xl font-display font-black text-white uppercase italic tracking-tighter mb-8">Muito Mais Que <span class="text-primary">Vistos</span></h2>
+                    <p class="text-lg text-on-surface-variant leading-relaxed mb-12">
+                        A KNJ TUR também é uma <strong>agência de viagens completa</strong>. Entendemos que o visto é apenas a chave que abre a porta. Depois disso, cuidamos de cada detalhe: das passagens aéreas com as melhores tarifas aos hotéis, aluguel de carros e roteiros que fazem sua viagem ser inesquecível.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <div class="flex items-center gap-2 text-white font-bold uppercase tracking-widest text-xs px-6 py-3 bg-surface rounded-full border border-white/5">
+                            <i data-lucide="plane" class="text-primary" size="16"></i> Passagens
+                        </div>
+                        <div class="flex items-center gap-2 text-white font-bold uppercase tracking-widest text-xs px-6 py-3 bg-surface rounded-full border border-white/5">
+                            <i data-lucide="hotel" class="text-primary" size="16"></i> Hotéis
+                        </div>
+                        <div class="flex items-center gap-2 text-white font-bold uppercase tracking-widest text-xs px-6 py-3 bg-surface rounded-full border border-white/5">
+                            <i data-lucide="car" class="text-primary" size="16"></i> Carros
+                        </div>
+                        <div class="flex items-center gap-2 text-white font-bold uppercase tracking-widest text-xs px-6 py-3 bg-surface rounded-full border border-white/5">
+                            <i data-lucide="life-buoy" class="text-primary" size="16"></i> Seguro
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-32 bg-surface text-center px-6">
+            <div class="container mx-auto">
+                <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-10 leading-tight uppercase italic tracking-tighter">Venha tomar um café conosco <br> em <span class="text-primary">Indaiatuba</span></h2>
+                <a href="https://wa.me/5511994085822" class="bg-[#25D366] hover:bg-opacity-90 text-white px-12 py-6 rounded-full text-xl font-bold transition-all transform hover:scale-105 inline-flex items-center gap-3 shadow-2xl shadow-[#25D366]/20">
+                    Falar com o Kenji no WhatsApp <i data-lucide="message-circle" size="24"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-24 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center md:text-left">
+                <!-- Col 1: Brand -->
+                <div class="space-y-8">
+                    <div>
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto mx-auto md:mx-0 opacity-90 mb-4" loading="lazy">
+                        <div class="text-primary font-display font-black text-2xl tracking-tighter italic">KNJ TUR</div>
+                    </div>
+                    <p class="text-xs text-on-surface-variant uppercase tracking-widest leading-loose max-w-[280px] mx-auto md:mx-0">
+                        Consultoria estratégica para vistos americanos e planejamento de viagens internacionais baseada em Indaiatuba, SP.
+                    </p>
+                    <div class="flex justify-center md:justify-start gap-6">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-primary transition-all">
+                            <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
+                        </a>
+                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-[#25D366] transition-all">
+                            <i data-lucide="message-circle" size="18"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Info -->
+                <div class="space-y-8">
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Explorar</h4>
+                    <nav class="flex flex-col gap-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+                        <a href="../index.html" class="hover:text-primary transition-colors">Início</a>
+                        <a href="../visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+                        <a href="../blog/" class="hover:text-primary transition-colors">Blog</a>
+                        <a href="../viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Contato -->
+                <div class="space-y-8">
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Fale Conosco</h4>
+                    <div class="flex flex-col gap-6 text-[10px] text-on-surface-variant uppercase tracking-widest font-medium">
+                        <div class="flex items-center gap-3 justify-center md:justify-start">
+                            <i data-lucide="map-pin" class="text-primary" size="14"></i>
+                            Jardim Dom Bosco, Indaiatuba, SP
+                        </div>
+                        <a href="mailto:kenji@knjtur.com" class="flex items-center gap-3 justify-center md:justify-start hover:text-primary transition-colors">
+                            <i data-lucide="mail" class="text-primary" size="14"></i>
+                            kenji@knjtur.com
+                        </a>
+                        <a href="https://wa.me/5511994085822" class="flex items-center gap-3 justify-center md:justify-start hover:text-primary transition-colors">
+                            <i data-lucide="phone" class="text-primary" size="14"></i>
+                            (11) 99408-5822
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 4: Bio/Legal -->
+                <div class="space-y-8">
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Transparência</h4>
+                    <div class="p-6 rounded-2xl bg-surface-variant border border-white/5 space-y-4 text-center md:text-left">
+                        <p class="text-[9px] text-on-surface-variant leading-relaxed uppercase tracking-widest">
+                            Processos conduzidos com ética e foco na aprovação do cliente. Não somos afiliados ao Governo dos EUA.
+                        </p>
+                    </div>
+                    <div class="flex justify-center md:justify-start gap-4 text-[9px] font-bold uppercase tracking-widest text-on-surface-variant/50">
+                        <a href="../politica-de-privacidade/" class="hover:text-primary">Privacidade</a>
+                        <a href="../termos-de-uso/" class="hover:text-primary">Termos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-[10px] text-on-surface-variant/40 uppercase tracking-widest font-medium">
+                    @2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS
+                </div>
+                <div class="text-[8px] uppercase tracking-widest text-on-surface-variant/20">
+                    AIO LOCAL BY ORVALIA STUDIO
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Pill -->
+    <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="fixed bottom-8 left-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float flex items-center justify-center">
+        <i data-lucide="message-circle" size="32"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Iniciar Lucide
+        lucide.createIcons();
+        
+        // Menu Mobile Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+            
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => mobileMenu.classList.remove('active'));
+            });
+        }
+    </script>
+</body>
+</html>

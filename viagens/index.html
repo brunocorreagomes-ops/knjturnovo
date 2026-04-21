@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viagens & Pacotes Turísticos | KNJ TUR</title>
-    <meta name="description" content="Planejamento completo de viagens internacionais. Passagens, hospedagem, traslados e pacotes personalizados com a KNJ TUR.">
+    <title>Agência de Viagens em Indaiatuba e Campinas | KNJ TUR</title>
+    <meta name="description" content="Agência de viagens personalizada em Indaiatuba e Campinas. Passagens aéreas, hotéis, traslados e roteiros exclusivos. Atendimento local especializado no interior de SP.">
+    <meta name="keywords" content="agência de viagens Indaiatuba, passagens aéreas Campinas, pacotes de viagem interior SP, consultoria de viagens Indaiatuba, hotéis personalizados, roteiro de viagem EUA">
     
     <!-- Base Styles -->
     <link rel="stylesheet" href="../styles.css">
@@ -33,6 +34,50 @@
             }
         }
     </script>
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Passagens Aéreas",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "KNJ TUR",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Indaiatuba",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        },
+        "description": "Busca estratégica das melhores rotas e custo-benefício em passagens aéreas internacionais e nacionais.",
+        "areaServed": ["Indaiatuba", "Campinas", "Jundiaí", "Sorocaba", "Americana"]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Hospedagem Personalizada",
+        "description": "Seleção de hotéis estratégicos e curadoria de estadias exclusivas para viagens de lazer ou negócios.",
+        "areaServed": ["Indaiatuba", "Campinas", "Interior de SP"]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Traslados e Transfers",
+        "description": "Transfers privativos para aeroportos (Viracopos, Guarulhos) e mobilidade em destinos internacionais.",
+        "areaServed": ["Indaiatuba", "Campinas", "Orlando", "Miami", "Europa"]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Roteiro de Viagem Personalizado",
+        "description": "Planejamento completo dia a dia, integrando passagens, hotéis e consultoria de visto.",
+        "areaServed": ["Indaiatuba", "Campinas", "Jundiaí"]
+      }
+    ]
+    </script>
 </head>
 <body class="bg-surface text-on-surface antialiased selection:bg-primary/30">
     <!-- Header -->
@@ -42,16 +87,17 @@
                 <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105">
                 <div class="flex flex-col">
                     <span class="text-white font-display font-black text-lg tracking-tighter leading-none italic">KNJ TUR</span>
-                    <span class="hidden sm:block text-[9px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">Consultoria de Vistos e Viagens</span>
+                    <span class="hidden sm:block text-[9px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">Viagens e Serviços Especializados</span>
                 </div>
             </a>
             
             <div class="flex items-center gap-8">
                 <nav class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-widest text-on-surface-variant">
                     <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="../sobre-nos/" class="hover:text-primary transition-colors">Sobre Nós</a>
                     <a href="../visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
                     <a href="../blog/" class="hover:text-primary transition-colors">Blog</a>
-                    <a href="./" class="hover:text-primary transition-colors text-primary border-b-2 border-primary pb-1">Viagens</a>
+                    <a href="./" class="text-primary border-b-2 border-primary pb-1 transition-colors">Viagens</a>
                     <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="bg-whatsapp hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full transition-all flex items-center gap-2">
                         <i data-lucide="message-circle" size="18"></i> WhatsApp
                     </a>
@@ -70,105 +116,253 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 z-40 bg-surface flex flex-col items-center justify-center gap-8 text-2xl font-black uppercase italic tracking-tighter">
-        <a href="../index.html">Home</a>
-        <a href="../visto-americano/">Guia Visto</a>
-        <a href="../blog/">Blog</a>
-        <a href="./" class="text-primary">Viagens</a>
-        <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" class="text-whatsapp border-2 border-whatsapp px-8 py-4 rounded-full">WhatsApp</a>
-        <a href="https://www.instagram.com/knjtur" target="_blank" class="flex items-center gap-2 text-white hover:text-primary">
+        <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+        <a href="../sobre-nos/" class="hover:text-primary transition-colors">Sobre Nós</a>
+        <a href="../visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
+        <a href="../blog/" class="hover:text-primary transition-colors">Blog</a>
+        <a href="./" class="text-primary border-b-2 border-primary">Viagens</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="text-whatsapp border-2 border-whatsapp px-8 py-4 rounded-full">WhatsApp</a>
+        <a href="https://www.instagram.com/knjtur" target="_blank" class="flex items-center gap-2 text-white hover:text-primary mt-4">
             <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-8 h-8 object-contain" referrerPolicy="no-referrer"> Instagram
         </a>
     </div>
 
-    <main class="pt-32 pb-20">
+    <main class="pt-32 pb-20 overflow-x-hidden">
         <!-- Hero Section -->
         <section class="container mx-auto px-6 text-center mb-16 md:mb-24 reveal reveal-up">
-            <h1 class="text-4xl md:text-6xl lg:text-8xl font-display font-black text-white mb-6 md:mb-8 tracking-tight">
-                Sua Viagem <span class="text-primary">Completa</span>
-            </h1>
-            <p class="text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto leading-relaxed mb-10 md:mb-12 reveal reveal-up reveal-delay-1">
-                Da emissão do visto ao desembarque no seu destino final. Oferecemos uma curadoria completa para que sua única preocupação seja aproveitar.
-            </p>
-            <a href="https://wa.me/5511994085822?text=Olá,%20gostaria%20de%20uma%20cotação%20para%20viagem." class="inline-flex items-center gap-3 bg-whatsapp hover:scale-105 transition-transform text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-base md:text-lg font-black uppercase tracking-widest shadow-2xl shadow-whatsapp/20 reveal reveal-up reveal-delay-2">
-                <i data-lucide="message-circle" class="w-5 h-5 md:w-6 md:h-6"></i> Solicitar Cotação
-            </a>
-        </section>
-
-        <!-- Services Grid -->
-        <section class="container mx-auto px-6 mb-32">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Passagens -->
-                <div class="reveal reveal-up reveal-delay-1 p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/30 transition-all group">
-                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
-                        <i data-lucide="plane" class="text-primary" size="28"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Passagens Aéreas</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Tarifas exclusivas e as melhores rotas para qualquer lugar do mundo, com foco em conforto e custo-benefício.</p>
-                </div>
-
-                <!-- Hospedagem -->
-                <div class="reveal reveal-up reveal-delay-2 p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/30 transition-all group">
-                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
-                        <i data-lucide="hotel" class="text-primary" size="28"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Hospedagem</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Seleção de hotéis de luxo, resorts e acomodações boutique que atendem aos mais altos padrões de exigência.</p>
-                </div>
-
-                <!-- Traslado -->
-                <div class="reveal reveal-up reveal-delay-3 p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/30 transition-all group">
-                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
-                        <i data-lucide="bus" class="text-primary" size="28"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Traslado</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Segurança e pontualidade no seu transporte do aeroporto ao hotel e entre seus destinos de passeio.</p>
-                </div>
-
-                <!-- Aluguel -->
-                <div class="reveal reveal-up reveal-delay-1 p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/30 transition-all group">
-                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
-                        <i data-lucide="car" class="text-primary" size="28"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Aluguel de Veículos</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">De compactos a modelos de luxo e esportivos. Liberdade total para explorar seu destino com o carro ideal.</p>
-                </div>
-
-                <!-- Pacotes -->
-                <div class="reveal reveal-up reveal-delay-2 p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/30 transition-all group">
-                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
-                        <i data-lucide="package" class="text-primary" size="28"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Pacotes Completos</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Roteiros personalizados que incluem tudo: voos, estadias, passeios e suporte 24h durante a viagem.</p>
-                </div>
-
-                <!-- Sob Medida (Destaque) -->
-                <div class="reveal reveal-up reveal-delay-3 p-8 md:p-10 rounded-[2rem] bg-gradient-to-br from-primary/20 to-surface-variant border border-primary/30 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-2xl font-display font-black text-white mb-4">Planejamento Sob Medida</h3>
-                        <p class="text-on-surface-variant text-sm leading-relaxed mb-8 md:mb-12">Não encontrou o que procurava? Nossa equipe desenha o roteiro dos seus sonhos do zero.</p>
-                    </div>
-                    <a href="https://wa.me/5511994085822" class="bg-whatsapp hover:bg-whatsapp/90 text-white py-4 rounded-2xl md:rounded-3xl font-black uppercase tracking-widest text-xs flex items-center justify-center gap-2 shadow-lg shadow-whatsapp/10">
-                        <i data-lucide="message-circle" size="16"></i> Solicitar Orçamento
+            <div class="max-w-4xl mx-auto">
+                <span class="text-primary text-xs md:text-sm font-black uppercase tracking-[0.4em] mb-4 block">Consultoria Premium de Turismo</span>
+                <h1 class="text-4xl md:text-7xl lg:text-8xl font-display font-black text-white mb-6 md:mb-8 tracking-tight leading-[1]">
+                    Viagens <span class="text-primary italic">Sob Medida</span> para o Interior de SP
+                </h1>
+                <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed mb-10 md:mb-12">
+                    De Indaiatuba e Campinas para o mundo. Atendimento 100% personalizado com especialistas locais que planejam cada detalhe da sua jornada, sem pacotes engessados.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4 reveal reveal-up reveal-delay-1">
+                    <a href="https://wa.me/5511994085822?text=Olá,%20gostaria%20de%20uma%20cotação%20para%20minha%20próxima%20viagem." class="inline-flex items-center justify-center gap-3 bg-whatsapp hover:scale-105 transition-transform text-white px-10 py-5 rounded-full text-base md:text-lg font-black uppercase tracking-widest shadow-2xl shadow-whatsapp/20">
+                        <i data-lucide="message-circle" size="24"></i> Planejar Minha Viagem
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Final CTA -->
-        <section class="container mx-auto px-6 mt-20 md:mt-32">
-            <div class="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden p-10 md:p-20 text-center border border-white/5 group">
-                <div class="absolute inset-0 z-0">
-                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1600" alt="Praia paradisíaca" class="w-full h-full object-cover opacity-20 transition-transform duration-1000 group-hover:scale-105" loading="lazy">
-                    <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+        <!-- Services Grid -->
+        <section class="container mx-auto px-6 mb-32">
+            <h2 class="text-2xl md:text-4xl font-display font-black text-white mb-12 md:mb-20 text-center uppercase italic tracking-tighter reveal reveal-up">
+                Nossas Soluções em <span class="text-primary">Serviços Turísticos</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. Passagens Aéreas -->
+                <div class="reveal reveal-up reveal-delay-1 p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/40 transition-all group flex flex-col justify-between h-full">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+                            <i data-lucide="plane" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4 italic tracking-tight">Passagens Aéreas</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                            Mais que uma reserva: fazemos a análise estratégica das melhores rotas para conexões ágeis e o melhor custo-benefício, saindo de Viracopos ou Guarulhos.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/5511994085822?text=Olá,%20gostaria%20de%20uma%20cotação%20de%20passagem%20aérea." class="text-primary font-black uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">
+                        Solicitar Cotação <i data-lucide="arrow-right" size="14"></i>
+                    </a>
                 </div>
-                <div class="relative z-10">
-                    <h2 class="text-3xl md:text-5xl lg:text-7xl font-display font-black text-white mb-6 md:mb-8 tracking-tighter">O mundo espera por você.</h2>
-                    <p class="text-on-surface-variant text-lg md:text-xl mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed">
-                        Combinamos nossa expertise em vistos com o melhor do turismo global para garantir que sua experiência seja impecável.
-                    </p>
-                    <a href="https://wa.me/5511994085822" class="inline-flex items-center gap-3 bg-whatsapp hover:scale-110 transition-transform text-white px-8 md:px-12 py-4 md:py-5 rounded-full text-lg md:text-xl font-black uppercase tracking-tighter">
-                        <i data-lucide="message-circle" class="w-6 h-6 md:w-8 md:h-8"></i> Começar Agora
+
+                <!-- 2. Hospedagem -->
+                <div class="reveal reveal-up reveal-delay-2 p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/40 transition-all group flex flex-col justify-between h-full">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+                            <i data-lucide="hotel" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4 italic tracking-tight">Hospedagem</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                            Curadoria de hotéis selecionados e estratégicos. Focamos em localização e conforto, garantindo que sua estadia eleve o nível da sua experiência de viagem.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/5511994085822?text=Olá,%20gostaria%20de%20indicações%20de%20hospedagem." class="text-primary font-black uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">
+                        Consultar Estadias <i data-lucide="arrow-right" size="14"></i>
+                    </a>
+                </div>
+
+                <!-- 3. Traslados -->
+                <div class="reveal reveal-up reveal-delay-3 p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/40 transition-all group flex flex-col justify-between h-full">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+                            <i data-lucide="move-right" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4 italic tracking-tight">Traslados & Transfers</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                            Segurança máxima com transfers privativos. Do aeroporto de Campinas (VCP) ao seu portão de embarque ou City Tours exclusivos nos EUA e Europa.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/5511994085822?text=Olá,%20gostaria%20de%20reservar%20um%20traslado." class="text-primary font-black uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">
+                        Reservar Transfer <i data-lucide="arrow-right" size="14"></i>
+                    </a>
+                </div>
+
+                <!-- 4. Aluguel de Carro -->
+                <div class="reveal reveal-up reveal-delay-1 p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/40 transition-all group flex flex-col justify-between h-full">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+                            <i data-lucide="car" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4 italic tracking-tight">Aluguel de Carros</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                            Reservas nacionais e internacionais com as melhores locadoras. Liberdade total para dirigir nos EUA com suporte e as melhores condições de seguro.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/5511994085822?text=Olá,%20gostaria%20de%20alugar%20um%20veículo." class="text-primary font-black uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">
+                        Alugar Agora <i data-lucide="arrow-right" size="14"></i>
+                    </a>
+                </div>
+
+                <!-- 5. Roteiro Personalizado -->
+                <div class="reveal reveal-up reveal-delay-2 p-8 md:p-10 bg-primary/5 border border-primary/20 rounded-[2.5rem] hover:border-primary transition-all group flex flex-col justify-between h-full">
+                    <div>
+                        <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+                            <i data-lucide="map" class="text-white" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4 italic tracking-tight">Roteiro 100% Personalizado</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                            Diferente de pacotes de agências comuns, desenhamos sua viagem dia a dia com base no seu perfil, tempo e orçamento. Planejamento exclusivo de especialistas.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/5511994085822?text=Olá,%20quero%20um%20roteiro%20exclusivo%20para%20minha%20viagem." class="text-primary font-black uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">
+                        Criar Meu Roteiro <i data-lucide="arrow-right" size="14"></i>
+                    </a>
+                </div>
+
+                <!-- 6. Consultoria de Visto Integrada -->
+                <div class="reveal reveal-up reveal-delay-3 p-8 md:p-10 glass-card bg-surface-variant/40 hover:border-primary/40 transition-all group flex flex-col justify-between h-full">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20 group-hover:bg-primary/20 transition-colors">
+                            <i data-lucide="shield-check" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4 italic tracking-tight">Consultoria de Visto</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                            Não se preocupe com burocracias. Integramos sua solicitação de visto ao planejamento da viagem para máxima segurança e chances de aprovação.
+                        </p>
+                    </div>
+                    <a href="../visto-americano/" class="text-primary font-black uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">
+                        Ver Mais Detalhes <i data-lucide="arrow-right" size="14"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Diferenciais Section -->
+        <section class="bg-surface-variant/30 py-24 md:py-32 border-y border-white/5 reveal reveal-up">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-5xl font-display font-black text-white leading-tight mb-8">
+                            Por que escolher a <br> <span class="text-primary italic">KNJ TUR</span> em Indaiatuba?
+                        </h2>
+                        <ul class="space-y-6">
+                            <li class="flex gap-4">
+                                <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center shrink-0 mt-1">
+                                    <i data-lucide="check" class="text-primary" size="14"></i>
+                                </div>
+                                <p class="text-on-surface-variant text-sm md:text-base leading-relaxed">
+                                    <strong class="text-white uppercase tracking-widest text-xs block mb-1">Especialista Local</strong>
+                                    Você é atendido por quem conhece os principais aeroportos da região (Viracopos) e as necessidades de quem mora no interior de SP.
+                                </p>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center shrink-0 mt-1">
+                                    <i data-lucide="check" class="text-primary" size="14"></i>
+                                </div>
+                                <p class="text-on-surface-variant text-sm md:text-base leading-relaxed">
+                                    <strong class="text-white uppercase tracking-widest text-xs block mb-1">Sem Call Centers</strong>
+                                    Diálogo direto via WhatsApp com especialistas reais. Nada de menus eletrônicos ou espera infinita.
+                                </p>
+                            </li>
+                            <li class="flex gap-4">
+                                <div class="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center shrink-0 mt-1">
+                                    <i data-lucide="check" class="text-primary" size="14"></i>
+                                </div>
+                                <p class="text-on-surface-variant text-sm md:text-base leading-relaxed">
+                                    <strong class="text-white uppercase tracking-widest text-xs block mb-1">Atendimento de Ponta a Ponta</strong>
+                                    Cuidamos da burocracia do visto até a reserva do melhor restaurante na sua cidade de destino.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-primary/10 blur-3xl group-hover:bg-primary/20 transition-all duration-700"></div>
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109c0f2?auto=format&fit=crop&q=80&w=800" alt="Viagem estratégica" class="relative z-10 w-full h-[400px] md:h-[500px] object-cover rounded-[3rem] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 border border-white/10">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="container mx-auto px-6 py-24 md:py-32">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-display font-black text-white mb-12 text-center italic tracking-tighter reveal reveal-up">
+                    Dúvidas <span class="text-primary tracking-tighter leading-none">Frequentes</span>
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="faq-item reveal reveal-up bg-surface-variant/20 border border-white/5 rounded-2xl overflow-hidden">
+                        <button class="w-full p-6 text-left flex justify-between items-center group">
+                            <span class="text-white font-bold text-sm md:text-base uppercase tracking-widest">Tem agência de viagens física em Indaiatuba?</span>
+                            <i data-lucide="chevron-down" class="text-primary group-hover:scale-125 transition-transform"></i>
+                        </button>
+                        <div class="px-6 pb-6 text-on-surface-variant text-sm leading-relaxed hidden">
+                            Sim! Nossa base estratégica fica em Indaiatuba, SP (Jardim Dom Bosco). Atendemos presencialmente com hora marcada ou 100% online para toda a região de Campinas e interior de São Paulo.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal reveal-up bg-surface-variant/20 border border-white/5 rounded-2xl overflow-hidden">
+                        <button class="w-full p-6 text-left flex justify-between items-center group">
+                            <span class="text-white font-bold text-sm md:text-base uppercase tracking-widest">Como contratar traslado para Viracopos?</span>
+                            <i data-lucide="chevron-down" class="text-primary group-hover:scale-125 transition-transform"></i>
+                        </button>
+                        <div class="px-6 pb-6 text-on-surface-variant text-sm leading-relaxed hidden">
+                            Basta nos chamar no WhatsApp. Oferecemos transfers privativos de Indaiatuba, Salto, Itu e Campinas diretamente para o aeroporto de Viracopos (VCP) ou Guarulhos (GRU), com horários flexíveis e total segurança.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal reveal-up bg-surface-variant/20 border border-white/5 rounded-2xl overflow-hidden">
+                        <button class="w-full p-6 text-left flex justify-between items-center group">
+                            <span class="text-white font-bold text-sm md:text-base uppercase tracking-widest">A KNJ TUR faz pacote personalizado para os EUA?</span>
+                            <i data-lucide="chevron-down" class="text-primary group-hover:scale-125 transition-transform"></i>
+                        </button>
+                        <div class="px-6 pb-6 text-on-surface-variant text-sm leading-relaxed hidden">
+                            Especialmente para os EUA! Somos especialistas na Flórida (Orlando/Miami) e Nova York. Montamos seu roteiro completo incluindo visto, passagens aéreas, reservas de carros, hospedagem e ingressos, tudo integrado para sua tranquilidade.
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal reveal-up bg-surface-variant/20 border border-white/5 rounded-2xl overflow-hidden">
+                        <button class="w-full p-6 text-left flex justify-between items-center group">
+                            <span class="text-white font-bold text-sm md:text-base uppercase tracking-widest">Qual a vantagem de contratar uma agência local?</span>
+                            <i data-lucide="chevron-down" class="text-primary group-hover:scale-125 transition-transform"></i>
+                        </button>
+                        <div class="px-6 pb-6 text-on-surface-variant text-sm leading-relaxed hidden">
+                            A principal vantagem é o atendimento de quem entende sua realidade. Sabemos dos desafios de trânsito para chegar aos aeroportos, conhecemos as melhores conexões saindo da região e estamos sempre disponíveis para reuniões presenciais se você preferir o "olho no olho".
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Conversion CTA -->
+        <section class="container mx-auto px-6 mb-32">
+            <div class="relative bg-gradient-to-br from-primary to-primary-dark p-12 md:p-20 rounded-[3rem] text-center overflow-hidden shadow-2xl shadow-primary/20 reveal reveal-up">
+                <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+                <h2 class="relative z-10 text-3xl md:text-6xl font-display font-black text-white mb-8 tracking-tighter italic">Transforme sua viagem em um <br> <span class="bg-white text-primary px-4 inline-block transform -skew-x-12 mt-4">Projeto de Sucesso</span></h2>
+                <p class="relative z-10 text-white/90 text-xl font-medium mb-12 max-w-2xl mx-auto">
+                    Solicite agora uma consultoria inicial sem compromisso com nossos especialistas em Indaiatuba.
+                </p>
+                <div class="relative z-10 flex flex-col md:flex-row justify-center gap-6 items-center">
+                    <a href="https://wa.me/5511994085822" class="w-full md:w-auto bg-surface text-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform flex items-center justify-center gap-3">
+                        <i data-lucide="message-circle" class="text-primary"></i> Falar no WhatsApp
+                    </a>
+                    <a href="mailto:kenji@knjtur.com" class="text-white border-b-2 border-white/30 hover:border-white transition-all font-bold uppercase tracking-widest text-xs">
+                        Enviar um E-mail
                     </a>
                 </div>
             </div>
@@ -176,103 +370,75 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-surface py-24 border-t border-white/5 reveal reveal-up">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center md:text-left">
+    <footer class="bg-surface py-24 border-t border-white/5">
+        <div class="container mx-auto px-6 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
                 <!-- Col 1: Brand -->
                 <div class="space-y-8">
                     <div>
                         <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto mx-auto md:mx-0 opacity-90 mb-4" loading="lazy">
                         <div class="text-primary font-display font-black text-2xl tracking-tighter italic">KNJ TUR</div>
                     </div>
-                    <p class="text-xs text-on-surface-variant uppercase tracking-widest leading-loose max-w-[280px] mx-auto md:mx-0">
-                        Consultoria estratégica para vistos americanos e planejamento de viagens internacionais com foco em aprovação e economia.
-                    </p>
-                    <div class="flex justify-center md:justify-start gap-6">
-                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-                            <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
+                    <nav class="flex justify-center md:justify-start gap-4">
+                        <a href="https://www.instagram.com/knjtur" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary transition-all">
+                            <i data-lucide="instagram" size="18"></i>
                         </a>
-                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full bg-surface-variant border border-white/10 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all">
+                        <a href="https://wa.me/5511994085822" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp transition-all">
                             <i data-lucide="message-circle" size="18"></i>
                         </a>
-                    </div>
-                </div>
-
-                <!-- Col 2: Info -->
-                <div class="space-y-8">
-                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Navegação</h4>
-                    <nav class="flex flex-col gap-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant">
-                        <a href="../index.html" class="hover:text-primary transition-colors">Início</a>
-                        <a href="../visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
-                        <a href="../blog/" class="hover:text-primary transition-colors">Blog KNJ</a>
-                        <a href="./" class="hover:text-primary transition-colors text-primary">Viagens & Pacotes</a>
                     </nav>
                 </div>
 
-                <!-- Col 3: Contato -->
+                <!-- Col 2: Services -->
                 <div class="space-y-8">
-                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Contato</h4>
-                    <div class="flex flex-col gap-6 text-[10px] text-on-surface-variant uppercase tracking-widest font-medium">
-                        <div class="flex items-center gap-3 justify-center md:justify-start">
-                            <i data-lucide="map-pin" class="text-primary" size="14"></i>
-                            Jardim Dom Bosco, Indaiatuba, SP
-                        </div>
-                        <a href="mailto:kenji@knjtur.com" class="flex items-center gap-3 justify-center md:justify-start hover:text-primary transition-colors">
-                            <i data-lucide="mail" class="text-primary" size="14"></i>
-                            kenji@knjtur.com
-                        </a>
-                        <a href="https://wa.me/5511994085822" class="flex items-center gap-3 justify-center md:justify-start hover:text-primary transition-colors">
-                            <i data-lucide="phone" class="text-primary" size="14"></i>
-                            (11) 99408-5822
-                        </a>
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Explore</h4>
+                    <nav class="flex flex-col gap-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+                        <a href="../index.html" class="hover:text-primary transition-colors">Início</a>
+                        <a href="../visto-americano/" class="hover:text-primary transition-colors">Visto Americano</a>
+                        <a href="../sobre-nos/" class="hover:text-primary transition-colors">A KNJ TUR</a>
+                        <a href="../blog/" class="hover:text-primary transition-colors">Blog & Dicas</a>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Local SEO -->
+                <div class="space-y-8">
+                    <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Área Local</h4>
+                    <div class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest space-y-4">
+                        <p>Agência de Viagens em Indaiatuba</p>
+                        <p>Consultoria de Turismo Campinas</p>
+                        <p>Atendimento Salto, Itu e Sorocaba</p>
+                        <p>Jundiaí e Americana</p>
                     </div>
                 </div>
 
                 <!-- Col 4: Bio/Legal -->
-                <div class="space-y-8">
+                <div class="space-y-8 text-center md:text-left">
                     <h4 class="text-white text-sm font-black uppercase tracking-[0.2em] italic">Segurança</h4>
-                    <div class="p-6 rounded-2xl bg-surface-variant border border-white/5 space-y-4">
-                        <div class="flex items-center gap-2 text-[9px] uppercase tracking-widest text-primary font-bold">
-                            <i data-lucide="shield-check" size="14"></i> Consultoria Auditada
-                        </div>
-                        <p class="text-[9px] text-on-surface-variant leading-relaxed uppercase tracking-widest">
-                            Análise técnica rigorosa baseada nas normas consulares vigentes para maximizar sua chance de sucesso.
-                        </p>
+                    <p class="text-[9px] text-on-surface-variant leading-relaxed uppercase tracking-widest">
+                        Processos auditados e suporte 24h para passageiros. Foco total em segurança e tranquilidade.
+                    </p>
+                    <div class="text-[9px] font-bold uppercase tracking-widest text-on-surface-variant/30">
+                        @2026 KNJ TUR | INDAIATUBA, SP
                     </div>
-                    <div class="flex flex-col gap-2">
-                        <p class="text-[9px] uppercase tracking-[0.4em] text-on-surface-variant/30 font-bold leading-relaxed">
-                            <i data-lucide="alert-triangle" size="10" class="inline text-primary/50 mr-1"></i> Não somos afiliados ao Governo dos EUA.
-                        </p>
-                        <div class="flex justify-center md:justify-start gap-4 text-[9px] font-bold uppercase tracking-widest text-on-surface-variant/50">
-                            <a href="../politica-de-privacidade/" class="hover:text-primary">Privacidade</a>
-                            <a href="../termos-de-uso/" class="hover:text-primary">Termos</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-                <div class="text-[10px] text-on-surface-variant/40 uppercase tracking-widest font-medium">
-                    @2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS
-                </div>
-                <div class="text-[8px] uppercase tracking-widest text-on-surface-variant/20">
-                    SITE DESENVOLVIDO POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Pill -->
-    <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="fixed bottom-8 left-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float flex items-center justify-center">
-        <i data-lucide="message-circle" size="32"></i>
-    </a>
-
-    <button id="back-to-top" class="fixed bottom-8 right-8 z-50 bg-primary text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 opacity-0 invisible translate-y-10 flex items-center justify-center">
-        <i data-lucide="arrow-up" size="32"></i>
-    </button>
-
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="../script.js"></script>
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-item button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('[data-lucide="chevron-down"]');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
 </body>
 </html>
