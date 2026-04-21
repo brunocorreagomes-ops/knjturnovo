@@ -108,43 +108,116 @@ document.addEventListener('DOMContentLoaded', () => {
         revealElements.forEach(el => el.classList.add('active'));
     }
 
-    // Blog "Load More" Logic
-    const loadMoreBtn = document.getElementById('load-more-btn');
-    const blogPosts = document.querySelectorAll('.blog-post');
-    const POSTS_PER_PAGE = 3;
-    let currentShown = POSTS_PER_PAGE;
+    // Global Share Functionality
+    const shareButtons = document.querySelectorAll('.share-btn');
+    shareButtons.forEach(btn => {
+        btn.addEventListener('click', async () => {
+            const url = window.location.href;
+            const title = document.title;
 
-    if (loadMoreBtn && blogPosts.length > 0) {
-        // Initial state is already set in HTML (posts 4+ have 'hidden' class)
-        
-        loadMoreBtn.addEventListener('click', () => {
-            let newlyShown = 0;
-            const hiddenPosts = Array.from(blogPosts).filter(post => post.classList.contains('hidden'));
-            
-            hiddenPosts.slice(0, POSTS_PER_PAGE).forEach((post, index) => {
-                // Remove hidden class with a small delay for staggered effect
-                setTimeout(() => {
-                    post.classList.remove('hidden');
-                    // Trigger reveal animation manually if it's already in viewport or let observer handle it
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: title,
+                        url: url
+                    });
+                } catch (err) {
+                    console.log('Share cancelled or failed:', err);
+                }
+            } else {
+                // Fallback: Copy to clipboard
+                try {
+                    await navigator.clipboard.writeText(url);
+                    const originalContent = btn.innerHTML;
+                    btn.innerHTML = '<i data-lucide="check" size="14"></i> URL Copiada!';
                     if (window.lucide) window.lucide.createIcons();
-                }, index * 150);
-                newlyShown++;
-            });
-
-            currentShown += newlyShown;
-
-            // Hide button if no more posts
-            if (currentShown >= blogPosts.length) {
-                loadMoreBtn.parentElement.classList.add('opacity-0', 'invisible');
-                setTimeout(() => {
-                    loadMoreBtn.parentElement.style.display = 'none';
-                }, 500);
+                    setTimeout(() => {
+                        btn.innerHTML = originalContent;
+                        if (window.lucide) window.lucide.createIcons();
+                    }, 2000);
+                } catch (err) {
+                    console.error('Failed to copy:', err);
+                }
             }
         });
-        
-        // Final hide check on load (if posts are less than limit)
-        if (blogPosts.length <= POSTS_PER_PAGE) {
-            loadMoreBtn.parentElement.style.display = 'none';
+    });
+
+    // Blog Pagination Logic
+    const blogPosts = document.querySelectorAll('.blog-post');
+    const prevBtn = document.getElementById('prev-page');
+    const nextBtn = document.getElementById('next-page');
+    const pageNumbersContainer = document.getElementById('page-numbers');
+    
+    const POSTS_PER_PAGE = 3;
+    let currentPage = 1;
+
+    if (blogPosts.length > 0 && pageNumbersContainer) {
+        const totalPages = Math.ceil(blogPosts.length / POSTS_PER_PAGE);
+
+        function showPage(page) {
+            const start = (page - 1) * POSTS_PER_PAGE;
+            const end = start + POSTS_PER_PAGE;
+
+            blogPosts.forEach((post, index) => {
+                if (index >= start && index < end) {
+                    post.classList.remove('hidden');
+                    // Ensure reveal animation works
+                    setTimeout(() => post.classList.add('active'), 50);
+                } else {
+                    post.classList.add('hidden');
+                    post.classList.remove('active');
+                }
+            });
+
+            updatePaginationUI();
+            
+            // Scroll to top of posts grid if not on initial load
+            if (window.scrollY > 500) {
+                const grid = document.getElementById('blog-posts-grid');
+                if (grid) grid.scrollIntoView({ behavior: 'smooth' });
+            }
         }
+
+        function updatePaginationUI() {
+            // Update buttons
+            if (prevBtn) prevBtn.disabled = currentPage === 1;
+            if (nextBtn) nextBtn.disabled = currentPage === totalPages;
+
+            // Update page numbers
+            pageNumbersContainer.innerHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                const btn = document.createElement('button');
+                btn.innerText = i;
+                btn.className = `w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-xs font-bold transition-all ${
+                    currentPage === i ? 'bg-primary text-white border-primary' : 'text-on-surface-variant hover:border-primary/50'
+                }`;
+                btn.onclick = () => {
+                    currentPage = i;
+                    showPage(currentPage);
+                };
+                pageNumbersContainer.appendChild(btn);
+            }
+        }
+
+        if (prevBtn) {
+            prevBtn.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    showPage(currentPage);
+                }
+            };
+        }
+
+        if (nextBtn) {
+            nextBtn.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    showPage(currentPage);
+                }
+            };
+        }
+
+        // Initialize
+        showPage(1);
     }
 });

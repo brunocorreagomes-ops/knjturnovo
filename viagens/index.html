@@ -40,9 +40,9 @@
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="../index.html" class="flex items-center gap-4 group">
                 <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105">
-                <div class="hidden lg:flex flex-col">
+                <div class="flex flex-col">
                     <span class="text-white font-display font-black text-lg tracking-tighter leading-none italic">KNJ TUR</span>
-                    <span class="text-[9px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">Consultoria de Vistos e Viagens</span>
+                    <span class="hidden sm:block text-[9px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">Consultoria de Vistos e Viagens</span>
                 </div>
             </a>
             
@@ -52,7 +52,7 @@
                     <a href="../visto-americano/" class="hover:text-primary transition-colors">Guia Visto</a>
                     <a href="../blog/" class="hover:text-primary transition-colors">Blog</a>
                     <a href="./" class="hover:text-primary transition-colors text-primary border-b-2 border-primary pb-1">Viagens</a>
-                    <a href="https://wa.me/5511994085822?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações%20sobre%20pacotes%20de%20viagem" target="_blank" class="bg-whatsapp hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full transition-all flex items-center gap-2">
+                    <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="bg-whatsapp hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full transition-all flex items-center gap-2">
                         <i data-lucide="message-circle" size="18"></i> WhatsApp
                     </a>
                 </nav>
@@ -74,7 +74,7 @@
         <a href="../visto-americano/">Guia Visto</a>
         <a href="../blog/">Blog</a>
         <a href="./" class="text-primary">Viagens</a>
-        <a href="https://wa.me/5511994085822" class="text-whatsapp border-2 border-whatsapp px-8 py-4 rounded-full">WhatsApp</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" class="text-whatsapp border-2 border-whatsapp px-8 py-4 rounded-full">WhatsApp</a>
         <a href="https://www.instagram.com/knjtur" target="_blank" class="flex items-center gap-2 text-white hover:text-primary">
             <img src="https://i.ibb.co/7xF759D2/instagramknj.webp" alt="Instagram" class="w-8 h-8 object-contain" referrerPolicy="no-referrer"> Instagram
         </a>
@@ -261,6 +261,15 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Pill -->
+    <a href="https://wa.me/5511994085822?text=Olá%20vim%20pelo%20site%20e%20gostaria%20de%20maiores%20informações" target="_blank" class="fixed bottom-8 left-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float flex items-center justify-center">
+        <i data-lucide="message-circle" size="32"></i>
+    </a>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 z-50 bg-primary text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 opacity-0 invisible translate-y-10 flex items-center justify-center">
+        <i data-lucide="arrow-up" size="32"></i>
+    </button>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest"></script>
